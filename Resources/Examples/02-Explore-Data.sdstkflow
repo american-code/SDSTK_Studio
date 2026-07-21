@@ -1,0 +1,65 @@
+{
+  "links" : [
+    {
+      "fromNode" : "DB556851-B73E-403D-84E8-9B0D7BA4DA04",
+      "fromPort" : "table",
+      "toNode" : "73046CAA-1252-423C-B8C8-42040DCD25AB",
+      "toPort" : "table"
+    },
+    {
+      "fromNode" : "DB556851-B73E-403D-84E8-9B0D7BA4DA04",
+      "fromPort" : "table",
+      "toNode" : "8A35AC3E-F279-4949-BC08-AEE13B147656",
+      "toPort" : "table"
+    },
+    {
+      "fromNode" : "DB556851-B73E-403D-84E8-9B0D7BA4DA04",
+      "fromPort" : "table",
+      "toNode" : "3A0A8293-FCE8-4464-AFD6-51EBEA41A156",
+      "toPort" : "table"
+    },
+    {
+      "fromNode" : "DB556851-B73E-403D-84E8-9B0D7BA4DA04",
+      "fromPort" : "table",
+      "toNode" : "E8CFC3FD-F1D0-466E-BA87-2550FF80A8DB",
+      "toPort" : "table"
+    }
+  ],
+  "nodes" : [
+    {
+      "id" : "DB556851-B73E-403D-84E8-9B0D7BA4DA04",
+      "params" : "e30=",
+      "typeID" : "Data.IrisExample",
+      "x" : 160,
+      "y" : 260
+    },
+    {
+      "id" : "73046CAA-1252-423C-B8C8-42040DCD25AB",
+      "params" : "e30=",
+      "typeID" : "Data.DataTable",
+      "x" : 480,
+      "y" : 80
+    },
+    {
+      "id" : "8A35AC3E-F279-4949-BC08-AEE13B147656",
+      "params" : "eyJiaW5zIjoxMCwiY29sdW1uIjoic2VwYWxfbGVuZ3RoIn0=",
+      "typeID" : "Visualize.Histogram",
+      "x" : 480,
+      "y" : 320
+    },
+    {
+      "id" : "3A0A8293-FCE8-4464-AFD6-51EBEA41A156",
+      "params" : "eyJjYXRlZ29yeUNvbHVtbiI6InNwZWNpZXMiLCJ2YWx1ZUNvbHVtbiI6InBldGFsX2xlbmd0aCJ9",
+      "typeID" : "Visualize.BoxPlot",
+      "x" : 800,
+      "y" : 80
+    },
+    {
+      "id" : "E8CFC3FD-F1D0-466E-BA87-2550FF80A8DB",
+      "params" : "eyJjb2x1bW5zIjpbInNlcGFsX2xlbmd0aCIsInNlcGFsX3dpZHRoIiwicGV0YWxfbGVuZ3RoIiwicGV0YWxfd2lkdGgiXX0=",
+      "typeID" : "Visualize.CorrelationHeatmap",
+      "x" : 800,
+      "y" : 320
+    }
+  ]
+}

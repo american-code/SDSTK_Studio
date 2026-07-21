@@ -1,0 +1,39 @@
+{
+  "links" : [
+    {
+      "fromNode" : "2BFE7B87-8781-4B4C-BFF3-9BB50C534984",
+      "fromPort" : "table",
+      "toNode" : "A147BD9B-D2C8-4A66-B860-22C64088FE3C",
+      "toPort" : "table"
+    },
+    {
+      "fromNode" : "396E368E-F848-430F-9A71-9F467AE33AD0",
+      "fromPort" : "learner",
+      "toNode" : "A147BD9B-D2C8-4A66-B860-22C64088FE3C",
+      "toPort" : "learner"
+    }
+  ],
+  "nodes" : [
+    {
+      "id" : "2BFE7B87-8781-4B4C-BFF3-9BB50C534984",
+      "params" : "e30=",
+      "typeID" : "Data.IrisExample",
+      "x" : 160,
+      "y" : 140
+    },
+    {
+      "id" : "396E368E-F848-430F-9A71-9F467AE33AD0",
+      "params" : "eyJsMiI6MH0=",
+      "typeID" : "Model.LinearRegression",
+      "x" : 160,
+      "y" : 420
+    },
+    {
+      "id" : "A147BD9B-D2C8-4A66-B860-22C64088FE3C",
+      "params" : "eyJmZWF0dXJlQ29sdW1ucyI6WyJzZXBhbF9sZW5ndGgiLCJzZXBhbF93aWR0aCIsInBldGFsX2xlbmd0aCJdLCJmb2xkcyI6NSwidGFyZ2V0Q29sdW1uIjoicGV0YWxfd2lkdGgifQ==",
+      "typeID" : "Evaluate.TestAndScoreRegressor",
+      "x" : 480,
+      "y" : 420
+    }
+  ]
+}

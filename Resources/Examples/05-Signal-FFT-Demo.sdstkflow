@@ -1,0 +1,26 @@
+{
+  "links" : [
+    {
+      "fromNode" : "61100DB8-3A00-409D-A8BC-8FAF84FBD4DA",
+      "fromPort" : "table",
+      "toNode" : "DF967AE0-DD14-4F88-9F6B-4DFADAB7DAE1",
+      "toPort" : "table"
+    }
+  ],
+  "nodes" : [
+    {
+      "id" : "61100DB8-3A00-409D-A8BC-8FAF84FBD4DA",
+      "params" : "eyJraW5kIjoiU2luZSB3YXZlIiwibm9pc2UiOjAuMDUwMDAwMDAwMDAwMDAwMDAzLCJyb3dzIjo1MTJ9",
+      "typeID" : "Data.SyntheticSignal",
+      "x" : 160,
+      "y" : 200
+    },
+    {
+      "id" : "DF967AE0-DD14-4F88-9F6B-4DFADAB7DAE1",
+      "params" : "eyJjb2x1bW4iOiJ5Iiwic2FtcGxlUmF0ZSI6MTAwfQ==",
+      "typeID" : "Signal.FFT",
+      "x" : 480,
+      "y" : 200
+    }
+  ]
+}

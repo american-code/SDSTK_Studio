@@ -1,0 +1,52 @@
+{
+  "links" : [
+    {
+      "fromNode" : "2D9E1E94-36C3-419A-AB2D-E663197E757B",
+      "fromPort" : "table",
+      "toNode" : "9BEB3472-E878-43DF-A8A0-8EC9C2F2E2B2",
+      "toPort" : "table"
+    },
+    {
+      "fromNode" : "2D9E1E94-36C3-419A-AB2D-E663197E757B",
+      "fromPort" : "table",
+      "toNode" : "CE2E34D1-A255-4CD1-AEED-5153417146DD",
+      "toPort" : "table"
+    },
+    {
+      "fromNode" : "D0923A30-2037-4D39-82F6-6E6156FD45CB",
+      "fromPort" : "learner",
+      "toNode" : "CE2E34D1-A255-4CD1-AEED-5153417146DD",
+      "toPort" : "learner"
+    }
+  ],
+  "nodes" : [
+    {
+      "id" : "2D9E1E94-36C3-419A-AB2D-E663197E757B",
+      "params" : "e30=",
+      "typeID" : "Data.IrisExample",
+      "x" : 160,
+      "y" : 140
+    },
+    {
+      "id" : "9BEB3472-E878-43DF-A8A0-8EC9C2F2E2B2",
+      "params" : "eyJ4Q29sdW1uIjoicGV0YWxfbGVuZ3RoIiwieUNvbHVtbiI6InBldGFsX3dpZHRoIn0=",
+      "typeID" : "Visualize.ScatterPlot",
+      "x" : 480,
+      "y" : 140
+    },
+    {
+      "id" : "D0923A30-2037-4D39-82F6-6E6156FD45CB",
+      "params" : "eyJmaXRJbnRlcmNlcHQiOnRydWUsIml0ZXJhdGlvbnMiOjIwMH0=",
+      "typeID" : "Model.LogisticRegression",
+      "x" : 160,
+      "y" : 420
+    },
+    {
+      "id" : "CE2E34D1-A255-4CD1-AEED-5153417146DD",
+      "params" : "eyJmZWF0dXJlQ29sdW1ucyI6WyJwZXRhbF9sZW5ndGgiLCJwZXRhbF93aWR0aCIsInNlcGFsX2xlbmd0aCIsInNlcGFsX3dpZHRoIl0sImZvbGRzIjo1LCJ0YXJnZXRDb2x1bW4iOiJzcGVjaWVzX2lkIn0=",
+      "typeID" : "Evaluate.TestAndScore",
+      "x" : 480,
+      "y" : 420
+    }
+  ]
+}

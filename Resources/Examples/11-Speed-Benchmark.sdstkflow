@@ -1,0 +1,14 @@
+{
+  "links" : [
+
+  ],
+  "nodes" : [
+    {
+      "id" : "6ADB10E4-0DE3-4116-96F1-6618E427B2B6",
+      "params" : "eyJyb3dDb3VudCI6MjAwMDAwMH0=",
+      "typeID" : "Data.Benchmark",
+      "x" : 300,
+      "y" : 200
+    }
+  ]
+}

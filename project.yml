@@ -1,0 +1,119 @@
+name: SDSTKStudio
+options:
+  bundleIdPrefix: org.sdstk.studio
+  deploymentTarget:
+    iOS: "26.0"
+    macOS: "26.0"
+  createIntermediateGroups: true
+
+settings:
+  base:
+    MARKETING_VERSION: "0.1.0"
+    CURRENT_PROJECT_VERSION: "1"
+    SWIFT_VERSION: "6.0"
+    # `targeted`, not `complete`: the document layer bridges SwiftUI's ReferenceFileDocument
+    # (synchronous, nonisolated requirements) to our @MainActor graph/engine, which holds
+    # non-Sendable DataFrame/Figure state on purpose (see StudioWidget.swift). Revisit once a
+    # later phase designs a real Sendable-safe boundary for background execution (e.g. Neural
+    # training) — don't fight `complete` mode for document I/O in the meantime.
+    SWIFT_STRICT_CONCURRENCY: targeted
+
+packages:
+  DataScience:
+    path: ../Downloads/SwiftSci/DataScience
+  Signal:
+    path: ../Downloads/SwiftSci/Signal
+  Text:
+    path: ../Downloads/SwiftSci/Text
+  TimeSeries:
+    path: ../Downloads/SwiftSci/TimeSeries
+  Optimize:
+    path: ../Downloads/SwiftSci/Optimize
+  Formulas:
+    path: ../Downloads/SwiftSci/Formulas
+  Graph:
+    path: ../Downloads/SwiftSci/Graph
+  Neural:
+    path: ../Downloads/SwiftSci/Neural
+
+targets:
+  SDSTKStudio:
+    type: application
+    supportedDestinations: [iOS, macOS]
+    deploymentTarget:
+      iOS: "26.0"
+      macOS: "26.0"
+    sources:
+      - path: Sources
+      - path: Resources
+    dependencies:
+      - package: DataScience
+        product: DataScience
+      - package: Signal
+        product: Signal
+      - package: Text
+        product: Text
+      - package: TimeSeries
+        product: TimeSeries
+      - package: Optimize
+        product: Optimize
+      - package: Formulas
+        product: Formulas
+      - package: Graph
+        product: Graph
+      - package: Neural
+        product: Neural
+    settings:
+      base:
+        PRODUCT_BUNDLE_IDENTIFIER: org.sdstk.studio.SDSTKStudio
+        PRODUCT_NAME: SDSTKStudio
+        ASSETCATALOG_COMPILER_APPICON_NAME: AppIcon
+        ENABLE_PREVIEWS: YES
+        CODE_SIGN_STYLE: Automatic
+        CODE_SIGN_ENTITLEMENTS[sdk=macosx*]: Resources/SDSTKStudio.macOS.entitlements
+    # A real generated Info.plist (not GENERATE_INFOPLIST_FILE's flat-key synthesis) — the
+    # document-type keys below (UTExportedTypeDeclarations/CFBundleDocumentTypes) are arrays of
+    # dicts, which GENERATE_INFOPLIST_FILE cannot express. Without them, iOS's document browser
+    # (behind DocumentGroup) doesn't know this app owns `.sdstkflow`/`.mbexpert`, and "Create
+    # Document" silently no-ops — confirmed missing, this is what fixes it.
+    info:
+      path: Generated/SDSTKStudio-Info.plist
+      properties:
+        LSApplicationCategoryType: public.app-category.developer-tools
+        CFBundleDisplayName: SDSTK Studio
+        NSHumanReadableCopyright: "Copyright © 2026 SDSTK. AGPL-3.0-or-later; commercial licensing available."
+        UILaunchScreen: {}
+        UISupportedInterfaceOrientations~ipad:
+          - UIInterfaceOrientationPortrait
+          - UIInterfaceOrientationPortraitUpsideDown
+          - UIInterfaceOrientationLandscapeLeft
+          - UIInterfaceOrientationLandscapeRight
+        UISupportsDocumentBrowser: true
+        LSSupportsOpeningDocumentsInPlace: true
+        UTExportedTypeDeclarations:
+          - UTTypeIdentifier: org.sdstk.studio.sdstkflow
+            UTTypeDescription: SDSTK Studio Workflow
+            UTTypeConformsTo:
+              - public.data
+              - public.content
+            UTTypeTagSpecification:
+              public.filename-extension:
+                - sdstkflow
+          - UTTypeIdentifier: org.sdstk.studio.mbexpert
+            UTTypeDescription: SDSTK Studio Expert Bundle
+            UTTypeConformsTo:
+              - com.apple.package
+            UTTypeTagSpecification:
+              public.filename-extension:
+                - mbexpert
+        CFBundleDocumentTypes:
+          - CFBundleTypeName: SDSTK Studio Workflow
+            LSItemContentTypes:
+              - org.sdstk.studio.sdstkflow
+            CFBundleTypeRole: Editor
+            LSHandlerRank: Owner
+          - CFBundleTypeName: SDSTK Studio Expert Bundle
+            LSItemContentTypes:
+              - org.sdstk.studio.mbexpert
+            CFBundleTypeRole: Editor
+            LSHandlerRank: Owner

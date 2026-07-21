@@ -1,0 +1,65 @@
+{
+  "links" : [
+    {
+      "fromNode" : "7B495D89-7900-4629-895D-DC1B14908D55",
+      "fromPort" : "table",
+      "toNode" : "C118A6B6-CF36-486E-8103-3ED4C7D3AE46",
+      "toPort" : "table"
+    },
+    {
+      "fromNode" : "C118A6B6-CF36-486E-8103-3ED4C7D3AE46",
+      "fromPort" : "table",
+      "toNode" : "A31454D7-8503-45F4-A1BA-98901BFFB06C",
+      "toPort" : "table"
+    },
+    {
+      "fromNode" : "A31454D7-8503-45F4-A1BA-98901BFFB06C",
+      "fromPort" : "table",
+      "toNode" : "107A2BD4-A785-4BF3-9041-87F34684481F",
+      "toPort" : "table"
+    },
+    {
+      "fromNode" : "C118A6B6-CF36-486E-8103-3ED4C7D3AE46",
+      "fromPort" : "table",
+      "toNode" : "9C89D0FE-DA1F-4EC9-AB95-E6144B8C3B9C",
+      "toPort" : "table"
+    }
+  ],
+  "nodes" : [
+    {
+      "id" : "7B495D89-7900-4629-895D-DC1B14908D55",
+      "params" : "e30=",
+      "typeID" : "Data.IrisExample",
+      "x" : 160,
+      "y" : 300
+    },
+    {
+      "id" : "C118A6B6-CF36-486E-8103-3ED4C7D3AE46",
+      "params" : "eyJjb2x1bW5zIjpbInNlcGFsX2xlbmd0aCIsInNlcGFsX3dpZHRoIiwicGV0YWxfbGVuZ3RoIiwicGV0YWxfd2lkdGgiXSwiayI6M30=",
+      "typeID" : "Unsupervised.KMeans",
+      "x" : 480,
+      "y" : 160
+    },
+    {
+      "id" : "A31454D7-8503-45F4-A1BA-98901BFFB06C",
+      "params" : "eyJjb2x1bW5zIjpbInNlcGFsX2xlbmd0aCIsInNlcGFsX3dpZHRoIiwicGV0YWxfbGVuZ3RoIiwicGV0YWxfd2lkdGgiXSwibkNvbXBvbmVudHMiOjJ9",
+      "typeID" : "Unsupervised.PCA",
+      "x" : 480,
+      "y" : 440
+    },
+    {
+      "id" : "107A2BD4-A785-4BF3-9041-87F34684481F",
+      "params" : "eyJ4Q29sdW1uIjoiUEMxIiwieUNvbHVtbiI6IlBDMiJ9",
+      "typeID" : "Visualize.ScatterPlot",
+      "x" : 800,
+      "y" : 440
+    },
+    {
+      "id" : "9C89D0FE-DA1F-4EC9-AB95-E6144B8C3B9C",
+      "params" : "e30=",
+      "typeID" : "Data.DataTable",
+      "x" : 800,
+      "y" : 160
+    }
+  ]
+}

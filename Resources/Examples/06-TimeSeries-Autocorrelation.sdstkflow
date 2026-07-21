@@ -1,0 +1,26 @@
+{
+  "links" : [
+    {
+      "fromNode" : "1FACA42A-4113-4540-8373-C13C3239E5DF",
+      "fromPort" : "table",
+      "toNode" : "F56426DB-3132-4A5C-84FB-299756702801",
+      "toPort" : "table"
+    }
+  ],
+  "nodes" : [
+    {
+      "id" : "1FACA42A-4113-4540-8373-C13C3239E5DF",
+      "params" : "eyJraW5kIjoiU2luZSB3YXZlIiwibm9pc2UiOjAuMTQ5OTk5OTk5OTk5OTk5OTksInJvd3MiOjIwMH0=",
+      "typeID" : "Data.SyntheticSignal",
+      "x" : 160,
+      "y" : 200
+    },
+    {
+      "id" : "F56426DB-3132-4A5C-84FB-299756702801",
+      "params" : "eyJjb2x1bW4iOiJ5IiwibWF4TGFnIjo0MH0=",
+      "typeID" : "TimeSeries.ACF",
+      "x" : 480,
+      "y" : 200
+    }
+  ]
+}

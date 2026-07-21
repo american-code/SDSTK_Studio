@@ -1,0 +1,26 @@
+{
+  "links" : [
+    {
+      "fromNode" : "5AA66A62-35C9-4E35-8504-D4D255625741",
+      "fromPort" : "table",
+      "toNode" : "94197E9B-506D-4B15-90B5-A9A561A5EC5F",
+      "toPort" : "table"
+    }
+  ],
+  "nodes" : [
+    {
+      "id" : "5AA66A62-35C9-4E35-8504-D4D255625741",
+      "params" : "eyJraW5kIjoiUXVhZHJhdGljIiwibm9pc2UiOjAuMjk5OTk5OTk5OTk5OTk5OTksInJvd3MiOjYwfQ==",
+      "typeID" : "Data.SyntheticSignal",
+      "x" : 160,
+      "y" : 200
+    },
+    {
+      "id" : "94197E9B-506D-4B15-90B5-A9A561A5EC5F",
+      "params" : "eyJmb3JtIjoiUXVhZHJhdGljIChhwrd4wrIgKyBiwrd4ICsgYykiLCJ4Q29sdW1uIjoieCIsInlDb2x1bW4iOiJ5In0=",
+      "typeID" : "Optimize.CurveFit",
+      "x" : 480,
+      "y" : 200
+    }
+  ]
+}

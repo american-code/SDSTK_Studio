@@ -1,0 +1,26 @@
+{
+  "links" : [
+    {
+      "fromNode" : "0D8371AA-A6B8-4547-990F-8BF4CE36371A",
+      "fromPort" : "table",
+      "toNode" : "AAE6543C-1CC2-4ECD-9AFC-92484FB2D250",
+      "toPort" : "edges"
+    }
+  ],
+  "nodes" : [
+    {
+      "id" : "0D8371AA-A6B8-4547-990F-8BF4CE36371A",
+      "params" : "e30=",
+      "typeID" : "Data.RouteExample",
+      "x" : 160,
+      "y" : 200
+    },
+    {
+      "id" : "AAE6543C-1CC2-4ECD-9AFC-92484FB2D250",
+      "params" : "eyJlbmQiOiJOZXcgWW9yayIsImZyb21Db2x1bW4iOiJmcm9tIiwic3RhcnQiOiJTYW4gRnJhbmNpc2NvIiwidG9Db2x1bW4iOiJ0byIsIndlaWdodENvbHVtbiI6Im1pbGVzIn0=",
+      "typeID" : "Graph.ShortestPath",
+      "x" : 480,
+      "y" : 200
+    }
+  ]
+}

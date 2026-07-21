@@ -1,0 +1,26 @@
+{
+  "links" : [
+    {
+      "fromNode" : "BA463F10-14F5-443B-9DB2-F0357080A97D",
+      "fromPort" : "table",
+      "toNode" : "900E3BFA-11E0-437C-848D-AE0BDBED9350",
+      "toPort" : "table"
+    }
+  ],
+  "nodes" : [
+    {
+      "id" : "BA463F10-14F5-443B-9DB2-F0357080A97D",
+      "params" : "e30=",
+      "typeID" : "Data.TextSample",
+      "x" : 160,
+      "y" : 200
+    },
+    {
+      "id" : "900E3BFA-11E0-437C-848D-AE0BDBED9350",
+      "params" : "eyJsYWJlbENvbHVtbiI6InRvcGljIiwidGV4dENvbHVtbiI6InRleHQifQ==",
+      "typeID" : "Text.Similarity",
+      "x" : 480,
+      "y" : 200
+    }
+  ]
+}

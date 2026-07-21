@@ -1,0 +1,957 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 77;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		00489FDD5855EAA0FEE23F02 /* RankWidget.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5229B03612755AD59A773A2D /* RankWidget.swift */; };
+		0054B6D187B954CB1A0188AA /* CurveFitWidget.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8351BFC8A0D82565AED808FC /* CurveFitWidget.swift */; };
+		038269DF5A03C801251D0491 /* DataTableWidget.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6D838EBF0A14485B210961A /* DataTableWidget.swift */; };
+		054B0AEB53EDC32450A40E0A /* HistogramWidget.swift in Sources */ = {isa = PBXBuildFile; fileRef = 353B56A1EE070A57C2589F9B /* HistogramWidget.swift */; };
+		07461F0B5BFADB8BC7C499D8 /* SelectColumnsWidget.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8AAFC0C95BFF5913B47ABB1C /* SelectColumnsWidget.swift */; };
+		0832CCA0EA236E9BA4F1D046 /* CanvasGridBackground.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C4AF6F9A41FDBD29545E048 /* CanvasGridBackground.swift */; };
+		08C420A4D32E20985F1F45FD /* iris.csv in Resources */ = {isa = PBXBuildFile; fileRef = 286C8896F5750B0F2559B2CF /* iris.csv */; };
+		08D81D61464B21F8655EDA7D /* LinkView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E63E29F40C1DC8DE802A1ABB /* LinkView.swift */; };
+		0A8B9F18523F8C499022D401 /* ExecutionEngine.swift in Sources */ = {isa = PBXBuildFile; fileRef = F49E14B1B54912B813E98B80 /* ExecutionEngine.swift */; };
+		0AC7AEBF96AF953853FA9CAC /* PCAWidget.swift in Sources */ = {isa = PBXBuildFile; fileRef = B580179A76A3FA95AD7A7273 /* PCAWidget.swift */; };
+		0E1134BBEFEB8AC8ACAF1D6D /* Ports.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0A6E733508D9AA980EB4BE8 /* Ports.swift */; };
+		1509AD92D5AB2CED3DC6AF06 /* ImageFileWidget.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CD1753865592414E5D9A043 /* ImageFileWidget.swift */; };
+		17761694E368983559680BC6 /* WorkflowGraph.swift in Sources */ = {isa = PBXBuildFile; fileRef = C02A920146CE0DDDECA52A47 /* WorkflowGraph.swift */; };
+		198FEAFEEB718951219BB98D /* BoxPlotWidget.swift in Sources */ = {isa = PBXBuildFile; fileRef = 385A3D679C92F9FB8185EE87 /* BoxPlotWidget.swift */; };
+		1B48213B672F7A037FF37699 /* TableGridView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4A2B1BB2FBCBAE92D5F5CC2 /* TableGridView.swift */; };
+		20BC5874A375802DF9E93F24 /* SyntheticSignalWidget.swift in Sources */ = {isa = PBXBuildFile; fileRef = BAB14CA9C20ACB32784B73DC /* SyntheticSignalWidget.swift */; };
+		20C124F5D8987BE133284B49 /* Formulas in Frameworks */ = {isa = PBXBuildFile; productRef = 73586FF2FBD57EAF3399B893 /* Formulas */; };
+		20ECF53639D617D8F1A9EDAE /* SDSTKStudioApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 236FEC40C4BAAC2858E8288B /* SDSTKStudioApp.swift */; };
+		23F4D5AF2EBB206C7F062A42 /* DecisionTreeClassifierWidget.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD88921573F7C979D6B8DCA0 /* DecisionTreeClassifierWidget.swift */; };
+		323361DD4DE4E493C9D258D1 /* ProjectileMotionWidget.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0B0121CF8437897B7780360 /* ProjectileMotionWidget.swift */; };
+		370A94F93FBE09C6FB54B4C0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CED39F031270BDA89E54D650 /* Assets.xcassets */; };
+		3CA52F5D890ADB67EB761F20 /* CoordinatorWidget.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84024032EBE8B4FE0AD2B691 /* CoordinatorWidget.swift */; };
+		4073A70E6F74A3554FCDC388 /* WidgetCatalog.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8FFBC66677CC924AEE36AB7 /* WidgetCatalog.swift */; };
+		41A81AF53ECD14BD91AE4BD2 /* ShortestPathWidget.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8293B50B04CBE3ACAF06FE09 /* ShortestPathWidget.swift */; };
+		423EE8564620DBA447C90C1C /* icon-ios.svg in Resources */ = {isa = PBXBuildFile; fileRef = 79A93620A46A1F8F3571E7FB /* icon-ios.svg */; };
+		433493FB39C4379F4E7CC370 /* TestAndScoreWidget.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A665751F972F5AA4CFF263C /* TestAndScoreWidget.swift */; };
+		449C2BA60E29BC64A1E2408B /* ScatterPlotWidget.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7AAD0B840D67AF56D40FF9E /* ScatterPlotWidget.swift */; };
+		45DB3B6C08C72DA5ED664BCE /* ExpertSupport.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A807537418BFB4AD0BA7EAD /* ExpertSupport.swift */; };
+		4612948FDC58E326C2E125BC /* FFTWidget.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51092ABCBBFDE3A539C985A7 /* FFTWidget.swift */; };
+		462B45795A7EA01DCCB0BE85 /* GettingStartedView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F17A10C2880135211E5C2F8 /* GettingStartedView.swift */; };
+		4A30C248170A13D8949C82A1 /* 11-Speed-Benchmark.sdstkflow in Resources */ = {isa = PBXBuildFile; fileRef = A8600AEC7DA5AAD9D502DC57 /* 11-Speed-Benchmark.sdstkflow */; };
+		4CAC2B92A98D6E4F5F6FA078 /* DataInfoWidget.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3785DDDCF4E262B9BD785176 /* DataInfoWidget.swift */; };
+		4CC5F610C4C4DF01EBAC847C /* BenchmarkWidget.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CBB2C6497DFB1F8035BB9C6 /* BenchmarkWidget.swift */; };
+		4E711C86C75C1D876817C705 /* KMeansWidget.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D85871999D07E91D6BA5174 /* KMeansWidget.swift */; };
+		5059ACB5AB5ABDB151E32249 /* 04-Unsupervised-Clustering.sdstkflow in Resources */ = {isa = PBXBuildFile; fileRef = 87E1511F2CAA11648EECBC55 /* 04-Unsupervised-Clustering.sdstkflow */; };
+		50A3781546273F8EBCF3819E /* GradientBoostingRegressorWidget.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85E016EBF5FEE849D4D9CADE /* GradientBoostingRegressorWidget.swift */; };
+		53C3386C00D16F49B16C43EF /* Graph in Frameworks */ = {isa = PBXBuildFile; productRef = 07C0F724BF874748B57F16A8 /* Graph */; };
+		57916A5DBB0BDAD81AA40450 /* ResearchExpertWidget.swift in Sources */ = {isa = PBXBuildFile; fileRef = B972A242E6E929155F0FA60E /* ResearchExpertWidget.swift */; };
+		58C0B4EFAFD249FD5E75E336 /* Text in Frameworks */ = {isa = PBXBuildFile; productRef = 648A664B5F4EC661F00B1BFC /* Text */; };
+		5E6F9009AB0917EBB27EC289 /* ConcatenateWidget.swift in Sources */ = {isa = PBXBuildFile; fileRef = 61E56E1AB35C08D85AF90864 /* ConcatenateWidget.swift */; };
+		652A7C968B42AD653065DE17 /* DecisionTreeRegressorWidget.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CDD9999BC709C3F9F001066 /* DecisionTreeRegressorWidget.swift */; };
+		6667523706382D95047EEEDF /* SamplerWidget.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF08DA49D455B525AE356845 /* SamplerWidget.swift */; };
+		691BE59BB76AC1065E2F5859 /* StudioWidget.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E1C1E935FF2712B8248A494 /* StudioWidget.swift */; };
+		6951217F8B977065C60A3AB9 /* 08-Text-Similarity.sdstkflow in Resources */ = {isa = PBXBuildFile; fileRef = 56EBB1718B792A012CDD2431 /* 08-Text-Similarity.sdstkflow */; };
+		698AE5D5BF7A4A0A1EC41BA3 /* MLPRegressorWidget.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D4915E627DF6AEA13A8E1B7 /* MLPRegressorWidget.swift */; };
+		6A172F8BB2CCF23CDBB62F81 /* ChartViews.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06AB46044B2121C17581D508 /* ChartViews.swift */; };
+		6B05BC5FB5D7AF7BAD252339 /* Optimize in Frameworks */ = {isa = PBXBuildFile; productRef = 73B37B1EDA9BFE5EBA58CB11 /* Optimize */; };
+		6CD19E295E34AD88E1B25C48 /* 10-Formulas-Physics.sdstkflow in Resources */ = {isa = PBXBuildFile; fileRef = 0CCE7E5A4005B4CABCD27CB0 /* 10-Formulas-Physics.sdstkflow */; };
+		70507B5BD46CB4CD0C489903 /* 09-Graph-ShortestPath.sdstkflow in Resources */ = {isa = PBXBuildFile; fileRef = 8EB3ABD6AB17BFDDCE435AFE /* 09-Graph-ShortestPath.sdstkflow */; };
+		765BAD757ADF55FEF8BE09DA /* icon-macos.svg in Resources */ = {isa = PBXBuildFile; fileRef = 63EAF1BB96E3C1CB52866736 /* icon-macos.svg */; };
+		775CDD246F423A5319600809 /* PaletteView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52652943CB965E60706C1A0C /* PaletteView.swift */; };
+		82816C37E76B3BB98CB9E9D7 /* 03-Regression-Demo.sdstkflow in Resources */ = {isa = PBXBuildFile; fileRef = 8B7E784F027A14256376B7F6 /* 03-Regression-Demo.sdstkflow */; };
+		830316B7BB6B2B21F64CD82B /* TestAndScoreRegressorWidget.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1141F987291B71B81653A8F6 /* TestAndScoreRegressorWidget.swift */; };
+		87CB25A75182E58B4A70F699 /* ConfusionMatrixWidget.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54C76036BB27CF72CF6D6015 /* ConfusionMatrixWidget.swift */; };
+		87E2EFB1A387ACDB98F4B2E6 /* ParquetFileWidget.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0EA2CFD9806703948B2FDA43 /* ParquetFileWidget.swift */; };
+		8AEC4409F4565A6C082582F5 /* CanvasView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 521B0980F1A7B69E131E44FF /* CanvasView.swift */; };
+		8D8700C136DF419B3952A5B8 /* MLPClassifierWidget.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B37A2DC6766209CE28969B8 /* MLPClassifierWidget.swift */; };
+		936F3C4986F0DC7376927D35 /* 07-Optimize-CurveFit.sdstkflow in Resources */ = {isa = PBXBuildFile; fileRef = 2715B2617F63336DAC3D8AB2 /* 07-Optimize-CurveFit.sdstkflow */; };
+		9630FCEC0F46C05BD22CF879 /* TextSampleWidget.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59DCBC3151C8C6E47E69C1CB /* TextSampleWidget.swift */; };
+		982B047D1E948AEFD44A1638 /* FeatureConstructorWidget.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2210E6C074EA1AFE4121265 /* FeatureConstructorWidget.swift */; };
+		9E4BF0B81EB6A72A4E792F57 /* 05-Signal-FFT-Demo.sdstkflow in Resources */ = {isa = PBXBuildFile; fileRef = 54A08F53903CC48AD5B60336 /* 05-Signal-FFT-Demo.sdstkflow */; };
+		A2841EBD8A0A21FA81A510B7 /* ImputeWidget.swift in Sources */ = {isa = PBXBuildFile; fileRef = B13575BC6C816EE7F3ED19CF /* ImputeWidget.swift */; };
+		A2EF7D7E89B61BEEBFFC7276 /* ChartExport.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F115A8B2D5A29B3E76C50C2 /* ChartExport.swift */; };
+		A35213144C7BC3120C287916 /* LinearRegressionWidget.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEC025FD79BE885F7C50DC69 /* LinearRegressionWidget.swift */; };
+		A692E737C493FE052A70E6D9 /* Signal in Frameworks */ = {isa = PBXBuildFile; productRef = 51517120D88E38B1E8D6D88D /* Signal */; };
+		A92DDE63549419F0BF84A6BF /* 02-Explore-Data.sdstkflow in Resources */ = {isa = PBXBuildFile; fileRef = F66F806856280D35BA4EDF53 /* 02-Explore-Data.sdstkflow */; };
+		B03D5AF94E078FD38D38D31E /* BarChartWidget.swift in Sources */ = {isa = PBXBuildFile; fileRef = F39A08354DE48CE54AB00561 /* BarChartWidget.swift */; };
+		B19B75D85D9431FD5D80ACE1 /* OutlierDetectionWidget.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51EAFEB3109220D4D302E15A /* OutlierDetectionWidget.swift */; };
+		BA7C60FBB0E4A295CEF05DB7 /* TextSimilarityWidget.swift in Sources */ = {isa = PBXBuildFile; fileRef = 971014220F08469F537285DA /* TextSimilarityWidget.swift */; };
+		BDEBCEE6A556E4A596E5A0F8 /* TextPromptWidget.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7F7A229477C38A2F17CC3D2 /* TextPromptWidget.swift */; };
+		BFF168A02A6C713EDCFBCF75 /* 01-Classify-Iris.sdstkflow in Resources */ = {isa = PBXBuildFile; fileRef = D0695D385A6A8D8B8A560F98 /* 01-Classify-Iris.sdstkflow */; };
+		C0F7EA9BA86F1CFDD3356B7A /* NormalizeWidget.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10322514C0B801ECDC2AD23E /* NormalizeWidget.swift */; };
+		C160D377613A916263E18275 /* ACFWidget.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4210A8DF530C29174BDABE6 /* ACFWidget.swift */; };
+		C176F3674DA8B6E6F4672137 /* CorrelationHeatmapWidget.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BAA0269185D38B1B613FF44 /* CorrelationHeatmapWidget.swift */; };
+		C42D1BD403DFC95AE77218E0 /* WorkflowDocument.swift in Sources */ = {isa = PBXBuildFile; fileRef = C58F9627FE0B09E3D4F18F16 /* WorkflowDocument.swift */; };
+		C882D15B087D45A26A7ED325 /* MemStackerWidget.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1A78A372A39C1A413AFFD37 /* MemStackerWidget.swift */; };
+		CC82BB8AF520264EFB3B2407 /* LogisticRegressionWidget.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95F1E50F3AFE13F2A0A680E1 /* LogisticRegressionWidget.swift */; };
+		CF92936A2C170F5533B1BCD8 /* WorkflowDocumentData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CAA268D61DA057A6ADAEF52 /* WorkflowDocumentData.swift */; };
+		D1CAB076AE4CE10A1C938925 /* DataScience in Frameworks */ = {isa = PBXBuildFile; productRef = 1E8FD2F4F404D7C69A723304 /* DataScience */; };
+		D27B451545620342CEA9A415 /* Neural in Frameworks */ = {isa = PBXBuildFile; productRef = 7CACC82DEFB97A15D6F87163 /* Neural */; };
+		D785C1D7C4DC61479C8362BE /* IrisExampleWidget.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFC8A00CA584F7048D36D7C5 /* IrisExampleWidget.swift */; };
+		D7FE66A5CF99C2B45D77EBCA /* RouteExampleWidget.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACFF3D23C82A65F066140395 /* RouteExampleWidget.swift */; };
+		DAA33FDD919C4E223B91836D /* InspectorPanel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CDF7FB91ECAEBE95B25F2E0 /* InspectorPanel.swift */; };
+		DB2583E7AA9471E522C9C217 /* RandomForestClassifierWidget.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7432513A47F7BBAD6964C729 /* RandomForestClassifierWidget.swift */; };
+		DBB8DE1CF03618049CA9A014 /* CoreMLTabularExpertWidget.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3634E2C1B1A3E9F3D30B851A /* CoreMLTabularExpertWidget.swift */; };
+		E6F9663E379B69001E452AAF /* OnDeviceExpertTrainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3BD21F7BC169BAF5F4C9EB8 /* OnDeviceExpertTrainer.swift */; };
+		E7F2A9023EC6E91DC91F47AA /* NodeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F061814ABB2EA600F7857073 /* NodeView.swift */; };
+		E9923AF5F9B28B301DCC499C /* CoreMLExpertWidget.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E8F5B98DA6F4E3AF6707EED /* CoreMLExpertWidget.swift */; };
+		EA09600CB9EF54819E114975 /* CanvasLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E24EFC41B95B4A96457E722 /* CanvasLayout.swift */; };
+		EE4A484EE596101B92E3F137 /* CSVFileWidget.swift in Sources */ = {isa = PBXBuildFile; fileRef = A71C4D0E480F92733C32F545 /* CSVFileWidget.swift */; };
+		EEEA529FD7CEFDC93B7D66A2 /* 06-TimeSeries-Autocorrelation.sdstkflow in Resources */ = {isa = PBXBuildFile; fileRef = 261641840C8C416707E7A542 /* 06-TimeSeries-Autocorrelation.sdstkflow */; };
+		F3855C4714EE1017E77D3FB0 /* TimeSeries in Frameworks */ = {isa = PBXBuildFile; productRef = 7BAA114CCC606AE9A2222937 /* TimeSeries */; };
+		F3E269F46925921F2727D559 /* SaveDataWidget.swift in Sources */ = {isa = PBXBuildFile; fileRef = B514D8CF7AA1DD161B68A1CC /* SaveDataWidget.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		06AB46044B2121C17581D508 /* ChartViews.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChartViews.swift; sourceTree = "<group>"; };
+		0CC56F3C6A4E2FBF52BB4472 /* Neural */ = {isa = PBXFileReference; lastKnownFileType = folder; name = Neural; path = ../Downloads/SwiftSci/Neural; sourceTree = SOURCE_ROOT; };
+		0CCE7E5A4005B4CABCD27CB0 /* 10-Formulas-Physics.sdstkflow */ = {isa = PBXFileReference; lastKnownFileType = text; path = "10-Formulas-Physics.sdstkflow"; sourceTree = "<group>"; };
+		0CD1753865592414E5D9A043 /* ImageFileWidget.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageFileWidget.swift; sourceTree = "<group>"; };
+		0EA2CFD9806703948B2FDA43 /* ParquetFileWidget.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ParquetFileWidget.swift; sourceTree = "<group>"; };
+		0F17A10C2880135211E5C2F8 /* GettingStartedView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GettingStartedView.swift; sourceTree = "<group>"; };
+		10322514C0B801ECDC2AD23E /* NormalizeWidget.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NormalizeWidget.swift; sourceTree = "<group>"; };
+		1141F987291B71B81653A8F6 /* TestAndScoreRegressorWidget.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestAndScoreRegressorWidget.swift; sourceTree = "<group>"; };
+		11DB520175FCE8D1DED6073A /* Graph */ = {isa = PBXFileReference; lastKnownFileType = folder; name = Graph; path = ../Downloads/SwiftSci/Graph; sourceTree = SOURCE_ROOT; };
+		1BA82F9DE9C201F53FC00D59 /* Formulas */ = {isa = PBXFileReference; lastKnownFileType = folder; name = Formulas; path = ../Downloads/SwiftSci/Formulas; sourceTree = SOURCE_ROOT; };
+		1FC24303F50249FA738AF94F /* SDSTKStudio.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SDSTKStudio.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		236FEC40C4BAAC2858E8288B /* SDSTKStudioApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SDSTKStudioApp.swift; sourceTree = "<group>"; };
+		261641840C8C416707E7A542 /* 06-TimeSeries-Autocorrelation.sdstkflow */ = {isa = PBXFileReference; lastKnownFileType = text; path = "06-TimeSeries-Autocorrelation.sdstkflow"; sourceTree = "<group>"; };
+		2715B2617F63336DAC3D8AB2 /* 07-Optimize-CurveFit.sdstkflow */ = {isa = PBXFileReference; lastKnownFileType = text; path = "07-Optimize-CurveFit.sdstkflow"; sourceTree = "<group>"; };
+		2740EF7E01E346AEC40A1755 /* SDSTKStudio.macOS.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = SDSTKStudio.macOS.entitlements; sourceTree = "<group>"; };
+		286C8896F5750B0F2559B2CF /* iris.csv */ = {isa = PBXFileReference; lastKnownFileType = text; path = iris.csv; sourceTree = "<group>"; };
+		29C3D528E0B7C316A043B772 /* TimeSeries */ = {isa = PBXFileReference; lastKnownFileType = folder; name = TimeSeries; path = ../Downloads/SwiftSci/TimeSeries; sourceTree = SOURCE_ROOT; };
+		2E8F5B98DA6F4E3AF6707EED /* CoreMLExpertWidget.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreMLExpertWidget.swift; sourceTree = "<group>"; };
+		353B56A1EE070A57C2589F9B /* HistogramWidget.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HistogramWidget.swift; sourceTree = "<group>"; };
+		3634E2C1B1A3E9F3D30B851A /* CoreMLTabularExpertWidget.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreMLTabularExpertWidget.swift; sourceTree = "<group>"; };
+		3785DDDCF4E262B9BD785176 /* DataInfoWidget.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataInfoWidget.swift; sourceTree = "<group>"; };
+		385A3D679C92F9FB8185EE87 /* BoxPlotWidget.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BoxPlotWidget.swift; sourceTree = "<group>"; };
+		3D4915E627DF6AEA13A8E1B7 /* MLPRegressorWidget.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MLPRegressorWidget.swift; sourceTree = "<group>"; };
+		4AE7CE9CBB3E6E9EB6D542BD /* DataScience */ = {isa = PBXFileReference; lastKnownFileType = folder; name = DataScience; path = ../Downloads/SwiftSci/DataScience; sourceTree = SOURCE_ROOT; };
+		51092ABCBBFDE3A539C985A7 /* FFTWidget.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FFTWidget.swift; sourceTree = "<group>"; };
+		51EAFEB3109220D4D302E15A /* OutlierDetectionWidget.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OutlierDetectionWidget.swift; sourceTree = "<group>"; };
+		521B0980F1A7B69E131E44FF /* CanvasView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CanvasView.swift; sourceTree = "<group>"; };
+		5229B03612755AD59A773A2D /* RankWidget.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RankWidget.swift; sourceTree = "<group>"; };
+		52652943CB965E60706C1A0C /* PaletteView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PaletteView.swift; sourceTree = "<group>"; };
+		54A08F53903CC48AD5B60336 /* 05-Signal-FFT-Demo.sdstkflow */ = {isa = PBXFileReference; lastKnownFileType = text; path = "05-Signal-FFT-Demo.sdstkflow"; sourceTree = "<group>"; };
+		54C76036BB27CF72CF6D6015 /* ConfusionMatrixWidget.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConfusionMatrixWidget.swift; sourceTree = "<group>"; };
+		56EBB1718B792A012CDD2431 /* 08-Text-Similarity.sdstkflow */ = {isa = PBXFileReference; lastKnownFileType = text; path = "08-Text-Similarity.sdstkflow"; sourceTree = "<group>"; };
+		59DCBC3151C8C6E47E69C1CB /* TextSampleWidget.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextSampleWidget.swift; sourceTree = "<group>"; };
+		5A665751F972F5AA4CFF263C /* TestAndScoreWidget.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestAndScoreWidget.swift; sourceTree = "<group>"; };
+		5E24EFC41B95B4A96457E722 /* CanvasLayout.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CanvasLayout.swift; sourceTree = "<group>"; };
+		61E56E1AB35C08D85AF90864 /* ConcatenateWidget.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConcatenateWidget.swift; sourceTree = "<group>"; };
+		63EAF1BB96E3C1CB52866736 /* icon-macos.svg */ = {isa = PBXFileReference; lastKnownFileType = text; path = "icon-macos.svg"; sourceTree = "<group>"; };
+		7262B497E86DDC170A4D351A /* Text */ = {isa = PBXFileReference; lastKnownFileType = folder; name = Text; path = ../Downloads/SwiftSci/Text; sourceTree = SOURCE_ROOT; };
+		7432513A47F7BBAD6964C729 /* RandomForestClassifierWidget.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RandomForestClassifierWidget.swift; sourceTree = "<group>"; };
+		79A93620A46A1F8F3571E7FB /* icon-ios.svg */ = {isa = PBXFileReference; lastKnownFileType = text; path = "icon-ios.svg"; sourceTree = "<group>"; };
+		7A807537418BFB4AD0BA7EAD /* ExpertSupport.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExpertSupport.swift; sourceTree = "<group>"; };
+		7E1C1E935FF2712B8248A494 /* StudioWidget.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StudioWidget.swift; sourceTree = "<group>"; };
+		7F115A8B2D5A29B3E76C50C2 /* ChartExport.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChartExport.swift; sourceTree = "<group>"; };
+		8293B50B04CBE3ACAF06FE09 /* ShortestPathWidget.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShortestPathWidget.swift; sourceTree = "<group>"; };
+		8351BFC8A0D82565AED808FC /* CurveFitWidget.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurveFitWidget.swift; sourceTree = "<group>"; };
+		84024032EBE8B4FE0AD2B691 /* CoordinatorWidget.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoordinatorWidget.swift; sourceTree = "<group>"; };
+		85E016EBF5FEE849D4D9CADE /* GradientBoostingRegressorWidget.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GradientBoostingRegressorWidget.swift; sourceTree = "<group>"; };
+		87E1511F2CAA11648EECBC55 /* 04-Unsupervised-Clustering.sdstkflow */ = {isa = PBXFileReference; lastKnownFileType = text; path = "04-Unsupervised-Clustering.sdstkflow"; sourceTree = "<group>"; };
+		8AAFC0C95BFF5913B47ABB1C /* SelectColumnsWidget.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelectColumnsWidget.swift; sourceTree = "<group>"; };
+		8B37A2DC6766209CE28969B8 /* MLPClassifierWidget.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MLPClassifierWidget.swift; sourceTree = "<group>"; };
+		8B7E784F027A14256376B7F6 /* 03-Regression-Demo.sdstkflow */ = {isa = PBXFileReference; lastKnownFileType = text; path = "03-Regression-Demo.sdstkflow"; sourceTree = "<group>"; };
+		8C4AF6F9A41FDBD29545E048 /* CanvasGridBackground.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CanvasGridBackground.swift; sourceTree = "<group>"; };
+		8CAA268D61DA057A6ADAEF52 /* WorkflowDocumentData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WorkflowDocumentData.swift; sourceTree = "<group>"; };
+		8EB3ABD6AB17BFDDCE435AFE /* 09-Graph-ShortestPath.sdstkflow */ = {isa = PBXFileReference; lastKnownFileType = text; path = "09-Graph-ShortestPath.sdstkflow"; sourceTree = "<group>"; };
+		95F1E50F3AFE13F2A0A680E1 /* LogisticRegressionWidget.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LogisticRegressionWidget.swift; sourceTree = "<group>"; };
+		971014220F08469F537285DA /* TextSimilarityWidget.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextSimilarityWidget.swift; sourceTree = "<group>"; };
+		9BAA0269185D38B1B613FF44 /* CorrelationHeatmapWidget.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CorrelationHeatmapWidget.swift; sourceTree = "<group>"; };
+		9CBB2C6497DFB1F8035BB9C6 /* BenchmarkWidget.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BenchmarkWidget.swift; sourceTree = "<group>"; };
+		9CDD9999BC709C3F9F001066 /* DecisionTreeRegressorWidget.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DecisionTreeRegressorWidget.swift; sourceTree = "<group>"; };
+		9CDF7FB91ECAEBE95B25F2E0 /* InspectorPanel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InspectorPanel.swift; sourceTree = "<group>"; };
+		9D85871999D07E91D6BA5174 /* KMeansWidget.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KMeansWidget.swift; sourceTree = "<group>"; };
+		A0A6E733508D9AA980EB4BE8 /* Ports.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Ports.swift; sourceTree = "<group>"; };
+		A2210E6C074EA1AFE4121265 /* FeatureConstructorWidget.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeatureConstructorWidget.swift; sourceTree = "<group>"; };
+		A3BD21F7BC169BAF5F4C9EB8 /* OnDeviceExpertTrainer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnDeviceExpertTrainer.swift; sourceTree = "<group>"; };
+		A71C4D0E480F92733C32F545 /* CSVFileWidget.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CSVFileWidget.swift; sourceTree = "<group>"; };
+		A8600AEC7DA5AAD9D502DC57 /* 11-Speed-Benchmark.sdstkflow */ = {isa = PBXFileReference; lastKnownFileType = text; path = "11-Speed-Benchmark.sdstkflow"; sourceTree = "<group>"; };
+		ACFF3D23C82A65F066140395 /* RouteExampleWidget.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RouteExampleWidget.swift; sourceTree = "<group>"; };
+		AFC8A00CA584F7048D36D7C5 /* IrisExampleWidget.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IrisExampleWidget.swift; sourceTree = "<group>"; };
+		B13575BC6C816EE7F3ED19CF /* ImputeWidget.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImputeWidget.swift; sourceTree = "<group>"; };
+		B1A78A372A39C1A413AFFD37 /* MemStackerWidget.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MemStackerWidget.swift; sourceTree = "<group>"; };
+		B514D8CF7AA1DD161B68A1CC /* SaveDataWidget.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SaveDataWidget.swift; sourceTree = "<group>"; };
+		B580179A76A3FA95AD7A7273 /* PCAWidget.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PCAWidget.swift; sourceTree = "<group>"; };
+		B7F7A229477C38A2F17CC3D2 /* TextPromptWidget.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextPromptWidget.swift; sourceTree = "<group>"; };
+		B972A242E6E929155F0FA60E /* ResearchExpertWidget.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResearchExpertWidget.swift; sourceTree = "<group>"; };
+		BAB14CA9C20ACB32784B73DC /* SyntheticSignalWidget.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SyntheticSignalWidget.swift; sourceTree = "<group>"; };
+		BD88921573F7C979D6B8DCA0 /* DecisionTreeClassifierWidget.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DecisionTreeClassifierWidget.swift; sourceTree = "<group>"; };
+		C02A920146CE0DDDECA52A47 /* WorkflowGraph.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WorkflowGraph.swift; sourceTree = "<group>"; };
+		C58F9627FE0B09E3D4F18F16 /* WorkflowDocument.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WorkflowDocument.swift; sourceTree = "<group>"; };
+		CED39F031270BDA89E54D650 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		D0695D385A6A8D8B8A560F98 /* 01-Classify-Iris.sdstkflow */ = {isa = PBXFileReference; lastKnownFileType = text; path = "01-Classify-Iris.sdstkflow"; sourceTree = "<group>"; };
+		D40AC44F8E6AF917C3931FF7 /* Signal */ = {isa = PBXFileReference; lastKnownFileType = folder; name = Signal; path = ../Downloads/SwiftSci/Signal; sourceTree = SOURCE_ROOT; };
+		E30532F93C4AD88F6A58CF65 /* Optimize */ = {isa = PBXFileReference; lastKnownFileType = folder; name = Optimize; path = ../Downloads/SwiftSci/Optimize; sourceTree = SOURCE_ROOT; };
+		E4A2B1BB2FBCBAE92D5F5CC2 /* TableGridView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableGridView.swift; sourceTree = "<group>"; };
+		E63E29F40C1DC8DE802A1ABB /* LinkView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LinkView.swift; sourceTree = "<group>"; };
+		E7AAD0B840D67AF56D40FF9E /* ScatterPlotWidget.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScatterPlotWidget.swift; sourceTree = "<group>"; };
+		E8FFBC66677CC924AEE36AB7 /* WidgetCatalog.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WidgetCatalog.swift; sourceTree = "<group>"; };
+		EEC025FD79BE885F7C50DC69 /* LinearRegressionWidget.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LinearRegressionWidget.swift; sourceTree = "<group>"; };
+		F061814ABB2EA600F7857073 /* NodeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NodeView.swift; sourceTree = "<group>"; };
+		F0B0121CF8437897B7780360 /* ProjectileMotionWidget.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProjectileMotionWidget.swift; sourceTree = "<group>"; };
+		F39A08354DE48CE54AB00561 /* BarChartWidget.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BarChartWidget.swift; sourceTree = "<group>"; };
+		F4210A8DF530C29174BDABE6 /* ACFWidget.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ACFWidget.swift; sourceTree = "<group>"; };
+		F49E14B1B54912B813E98B80 /* ExecutionEngine.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExecutionEngine.swift; sourceTree = "<group>"; };
+		F66F806856280D35BA4EDF53 /* 02-Explore-Data.sdstkflow */ = {isa = PBXFileReference; lastKnownFileType = text; path = "02-Explore-Data.sdstkflow"; sourceTree = "<group>"; };
+		F6D838EBF0A14485B210961A /* DataTableWidget.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataTableWidget.swift; sourceTree = "<group>"; };
+		FF08DA49D455B525AE356845 /* SamplerWidget.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SamplerWidget.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		AF72998F052C75F78E8FA234 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D1CAB076AE4CE10A1C938925 /* DataScience in Frameworks */,
+				A692E737C493FE052A70E6D9 /* Signal in Frameworks */,
+				58C0B4EFAFD249FD5E75E336 /* Text in Frameworks */,
+				F3855C4714EE1017E77D3FB0 /* TimeSeries in Frameworks */,
+				6B05BC5FB5D7AF7BAD252339 /* Optimize in Frameworks */,
+				20C124F5D8987BE133284B49 /* Formulas in Frameworks */,
+				53C3386C00D16F49B16C43EF /* Graph in Frameworks */,
+				D27B451545620342CEA9A415 /* Neural in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		03757F2BEA0EF35ACAF762AF /* Examples */ = {
+			isa = PBXGroup;
+			children = (
+				D0695D385A6A8D8B8A560F98 /* 01-Classify-Iris.sdstkflow */,
+				F66F806856280D35BA4EDF53 /* 02-Explore-Data.sdstkflow */,
+				8B7E784F027A14256376B7F6 /* 03-Regression-Demo.sdstkflow */,
+				87E1511F2CAA11648EECBC55 /* 04-Unsupervised-Clustering.sdstkflow */,
+				54A08F53903CC48AD5B60336 /* 05-Signal-FFT-Demo.sdstkflow */,
+				261641840C8C416707E7A542 /* 06-TimeSeries-Autocorrelation.sdstkflow */,
+				2715B2617F63336DAC3D8AB2 /* 07-Optimize-CurveFit.sdstkflow */,
+				56EBB1718B792A012CDD2431 /* 08-Text-Similarity.sdstkflow */,
+				8EB3ABD6AB17BFDDCE435AFE /* 09-Graph-ShortestPath.sdstkflow */,
+				0CCE7E5A4005B4CABCD27CB0 /* 10-Formulas-Physics.sdstkflow */,
+				A8600AEC7DA5AAD9D502DC57 /* 11-Speed-Benchmark.sdstkflow */,
+				286C8896F5750B0F2559B2CF /* iris.csv */,
+			);
+			path = Examples;
+			sourceTree = "<group>";
+		};
+		059C4A0EAD032F35DDDF57F1 /* App */ = {
+			isa = PBXGroup;
+			children = (
+				236FEC40C4BAAC2858E8288B /* SDSTKStudioApp.swift */,
+			);
+			path = App;
+			sourceTree = "<group>";
+		};
+		0E5B00730927B0ED88E49DB3 /* Optimize */ = {
+			isa = PBXGroup;
+			children = (
+				8351BFC8A0D82565AED808FC /* CurveFitWidget.swift */,
+			);
+			path = Optimize;
+			sourceTree = "<group>";
+		};
+		0EA363F2BAB3FE8AC736F912 /* Rendering */ = {
+			isa = PBXGroup;
+			children = (
+				7F115A8B2D5A29B3E76C50C2 /* ChartExport.swift */,
+				06AB46044B2121C17581D508 /* ChartViews.swift */,
+				E4A2B1BB2FBCBAE92D5F5CC2 /* TableGridView.swift */,
+			);
+			path = Rendering;
+			sourceTree = "<group>";
+		};
+		21702CAFE5FC2144620FD015 /* Evaluate */ = {
+			isa = PBXGroup;
+			children = (
+				54C76036BB27CF72CF6D6015 /* ConfusionMatrixWidget.swift */,
+				1141F987291B71B81653A8F6 /* TestAndScoreRegressorWidget.swift */,
+				5A665751F972F5AA4CFF263C /* TestAndScoreWidget.swift */,
+			);
+			path = Evaluate;
+			sourceTree = "<group>";
+		};
+		32B1665F5896F4ED54DFEC59 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				1FC24303F50249FA738AF94F /* SDSTKStudio.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		4EF51162FEEEBC6B4D3BBF2B /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				CED39F031270BDA89E54D650 /* Assets.xcassets */,
+				2740EF7E01E346AEC40A1755 /* SDSTKStudio.macOS.entitlements */,
+				BF4FC0C928B7DC6653F22894 /* AppIconSource */,
+				03757F2BEA0EF35ACAF762AF /* Examples */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		5391C9F35F566D4977EC0FBA /* Experts */ = {
+			isa = PBXGroup;
+			children = (
+				84024032EBE8B4FE0AD2B691 /* CoordinatorWidget.swift */,
+				2E8F5B98DA6F4E3AF6707EED /* CoreMLExpertWidget.swift */,
+				3634E2C1B1A3E9F3D30B851A /* CoreMLTabularExpertWidget.swift */,
+				7A807537418BFB4AD0BA7EAD /* ExpertSupport.swift */,
+				B1A78A372A39C1A413AFFD37 /* MemStackerWidget.swift */,
+				A3BD21F7BC169BAF5F4C9EB8 /* OnDeviceExpertTrainer.swift */,
+				B972A242E6E929155F0FA60E /* ResearchExpertWidget.swift */,
+			);
+			path = Experts;
+			sourceTree = "<group>";
+		};
+		59A798DE21A30619BF19C7D7 /* Widgets */ = {
+			isa = PBXGroup;
+			children = (
+				BC4DC32F400CC65E7CE40269 /* Data */,
+				21702CAFE5FC2144620FD015 /* Evaluate */,
+				5391C9F35F566D4977EC0FBA /* Experts */,
+				8C3FD30C71EC07F26CF7D059 /* Formulas */,
+				69B130A7F705FDED82ECBD04 /* Graph */,
+				B175971D51331960E1D7C935 /* Model */,
+				0E5B00730927B0ED88E49DB3 /* Optimize */,
+				9533E3390C86060F7B9A88CB /* Signal */,
+				FF40BABFBF2E5AED65EA13C3 /* Text */,
+				7C59A12DDFCC21F09C9C7270 /* TimeSeries */,
+				C338EF95F7DA80CD22AEB8B8 /* Unsupervised */,
+				92ABEC2F85798960A2A9AEB8 /* Visualize */,
+			);
+			path = Widgets;
+			sourceTree = "<group>";
+		};
+		69B130A7F705FDED82ECBD04 /* Graph */ = {
+			isa = PBXGroup;
+			children = (
+				8293B50B04CBE3ACAF06FE09 /* ShortestPathWidget.swift */,
+			);
+			path = Graph;
+			sourceTree = "<group>";
+		};
+		754399502BE03FB8B88B9F77 = {
+			isa = PBXGroup;
+			children = (
+				8DB0DC2E6487A3A07228CC8F /* Packages */,
+				4EF51162FEEEBC6B4D3BBF2B /* Resources */,
+				9168BBE4E03BFB7ABF22B229 /* Sources */,
+				32B1665F5896F4ED54DFEC59 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		754E4DFB25AFAA9C856CD115 /* Canvas */ = {
+			isa = PBXGroup;
+			children = (
+				8C4AF6F9A41FDBD29545E048 /* CanvasGridBackground.swift */,
+				5E24EFC41B95B4A96457E722 /* CanvasLayout.swift */,
+				521B0980F1A7B69E131E44FF /* CanvasView.swift */,
+				F49E14B1B54912B813E98B80 /* ExecutionEngine.swift */,
+				0F17A10C2880135211E5C2F8 /* GettingStartedView.swift */,
+				9CDF7FB91ECAEBE95B25F2E0 /* InspectorPanel.swift */,
+				E63E29F40C1DC8DE802A1ABB /* LinkView.swift */,
+				F061814ABB2EA600F7857073 /* NodeView.swift */,
+				52652943CB965E60706C1A0C /* PaletteView.swift */,
+				A0A6E733508D9AA980EB4BE8 /* Ports.swift */,
+				7E1C1E935FF2712B8248A494 /* StudioWidget.swift */,
+				E8FFBC66677CC924AEE36AB7 /* WidgetCatalog.swift */,
+				C02A920146CE0DDDECA52A47 /* WorkflowGraph.swift */,
+			);
+			path = Canvas;
+			sourceTree = "<group>";
+		};
+		7C59A12DDFCC21F09C9C7270 /* TimeSeries */ = {
+			isa = PBXGroup;
+			children = (
+				F4210A8DF530C29174BDABE6 /* ACFWidget.swift */,
+			);
+			path = TimeSeries;
+			sourceTree = "<group>";
+		};
+		8C3FD30C71EC07F26CF7D059 /* Formulas */ = {
+			isa = PBXGroup;
+			children = (
+				F0B0121CF8437897B7780360 /* ProjectileMotionWidget.swift */,
+			);
+			path = Formulas;
+			sourceTree = "<group>";
+		};
+		8DB0DC2E6487A3A07228CC8F /* Packages */ = {
+			isa = PBXGroup;
+			children = (
+				4AE7CE9CBB3E6E9EB6D542BD /* DataScience */,
+				1BA82F9DE9C201F53FC00D59 /* Formulas */,
+				11DB520175FCE8D1DED6073A /* Graph */,
+				0CC56F3C6A4E2FBF52BB4472 /* Neural */,
+				E30532F93C4AD88F6A58CF65 /* Optimize */,
+				D40AC44F8E6AF917C3931FF7 /* Signal */,
+				7262B497E86DDC170A4D351A /* Text */,
+				29C3D528E0B7C316A043B772 /* TimeSeries */,
+			);
+			name = Packages;
+			sourceTree = "<group>";
+		};
+		9002660F2B147F242E28E66F /* Persistence */ = {
+			isa = PBXGroup;
+			children = (
+				C58F9627FE0B09E3D4F18F16 /* WorkflowDocument.swift */,
+				8CAA268D61DA057A6ADAEF52 /* WorkflowDocumentData.swift */,
+			);
+			path = Persistence;
+			sourceTree = "<group>";
+		};
+		9168BBE4E03BFB7ABF22B229 /* Sources */ = {
+			isa = PBXGroup;
+			children = (
+				059C4A0EAD032F35DDDF57F1 /* App */,
+				754E4DFB25AFAA9C856CD115 /* Canvas */,
+				9002660F2B147F242E28E66F /* Persistence */,
+				0EA363F2BAB3FE8AC736F912 /* Rendering */,
+				59A798DE21A30619BF19C7D7 /* Widgets */,
+			);
+			path = Sources;
+			sourceTree = "<group>";
+		};
+		92ABEC2F85798960A2A9AEB8 /* Visualize */ = {
+			isa = PBXGroup;
+			children = (
+				F39A08354DE48CE54AB00561 /* BarChartWidget.swift */,
+				385A3D679C92F9FB8185EE87 /* BoxPlotWidget.swift */,
+				9BAA0269185D38B1B613FF44 /* CorrelationHeatmapWidget.swift */,
+				353B56A1EE070A57C2589F9B /* HistogramWidget.swift */,
+				5229B03612755AD59A773A2D /* RankWidget.swift */,
+				E7AAD0B840D67AF56D40FF9E /* ScatterPlotWidget.swift */,
+			);
+			path = Visualize;
+			sourceTree = "<group>";
+		};
+		9533E3390C86060F7B9A88CB /* Signal */ = {
+			isa = PBXGroup;
+			children = (
+				51092ABCBBFDE3A539C985A7 /* FFTWidget.swift */,
+			);
+			path = Signal;
+			sourceTree = "<group>";
+		};
+		B175971D51331960E1D7C935 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				BD88921573F7C979D6B8DCA0 /* DecisionTreeClassifierWidget.swift */,
+				9CDD9999BC709C3F9F001066 /* DecisionTreeRegressorWidget.swift */,
+				85E016EBF5FEE849D4D9CADE /* GradientBoostingRegressorWidget.swift */,
+				EEC025FD79BE885F7C50DC69 /* LinearRegressionWidget.swift */,
+				95F1E50F3AFE13F2A0A680E1 /* LogisticRegressionWidget.swift */,
+				8B37A2DC6766209CE28969B8 /* MLPClassifierWidget.swift */,
+				3D4915E627DF6AEA13A8E1B7 /* MLPRegressorWidget.swift */,
+				7432513A47F7BBAD6964C729 /* RandomForestClassifierWidget.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		BC4DC32F400CC65E7CE40269 /* Data */ = {
+			isa = PBXGroup;
+			children = (
+				9CBB2C6497DFB1F8035BB9C6 /* BenchmarkWidget.swift */,
+				61E56E1AB35C08D85AF90864 /* ConcatenateWidget.swift */,
+				A71C4D0E480F92733C32F545 /* CSVFileWidget.swift */,
+				3785DDDCF4E262B9BD785176 /* DataInfoWidget.swift */,
+				F6D838EBF0A14485B210961A /* DataTableWidget.swift */,
+				A2210E6C074EA1AFE4121265 /* FeatureConstructorWidget.swift */,
+				0CD1753865592414E5D9A043 /* ImageFileWidget.swift */,
+				B13575BC6C816EE7F3ED19CF /* ImputeWidget.swift */,
+				AFC8A00CA584F7048D36D7C5 /* IrisExampleWidget.swift */,
+				10322514C0B801ECDC2AD23E /* NormalizeWidget.swift */,
+				51EAFEB3109220D4D302E15A /* OutlierDetectionWidget.swift */,
+				0EA2CFD9806703948B2FDA43 /* ParquetFileWidget.swift */,
+				ACFF3D23C82A65F066140395 /* RouteExampleWidget.swift */,
+				FF08DA49D455B525AE356845 /* SamplerWidget.swift */,
+				B514D8CF7AA1DD161B68A1CC /* SaveDataWidget.swift */,
+				8AAFC0C95BFF5913B47ABB1C /* SelectColumnsWidget.swift */,
+				BAB14CA9C20ACB32784B73DC /* SyntheticSignalWidget.swift */,
+				B7F7A229477C38A2F17CC3D2 /* TextPromptWidget.swift */,
+				59DCBC3151C8C6E47E69C1CB /* TextSampleWidget.swift */,
+			);
+			path = Data;
+			sourceTree = "<group>";
+		};
+		BF4FC0C928B7DC6653F22894 /* AppIconSource */ = {
+			isa = PBXGroup;
+			children = (
+				79A93620A46A1F8F3571E7FB /* icon-ios.svg */,
+				63EAF1BB96E3C1CB52866736 /* icon-macos.svg */,
+			);
+			path = AppIconSource;
+			sourceTree = "<group>";
+		};
+		C338EF95F7DA80CD22AEB8B8 /* Unsupervised */ = {
+			isa = PBXGroup;
+			children = (
+				9D85871999D07E91D6BA5174 /* KMeansWidget.swift */,
+				B580179A76A3FA95AD7A7273 /* PCAWidget.swift */,
+			);
+			path = Unsupervised;
+			sourceTree = "<group>";
+		};
+		FF40BABFBF2E5AED65EA13C3 /* Text */ = {
+			isa = PBXGroup;
+			children = (
+				971014220F08469F537285DA /* TextSimilarityWidget.swift */,
+			);
+			path = Text;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		A5AC4B5C9F3C4A7984B744F9 /* SDSTKStudio */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E298C32689C6B9BD7324817B /* Build configuration list for PBXNativeTarget "SDSTKStudio" */;
+			buildPhases = (
+				576B21F40869AF0F12B0A210 /* Sources */,
+				A839302951746B6FE3476506 /* Resources */,
+				AF72998F052C75F78E8FA234 /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = SDSTKStudio;
+			packageProductDependencies = (
+				1E8FD2F4F404D7C69A723304 /* DataScience */,
+				51517120D88E38B1E8D6D88D /* Signal */,
+				648A664B5F4EC661F00B1BFC /* Text */,
+				7BAA114CCC606AE9A2222937 /* TimeSeries */,
+				73B37B1EDA9BFE5EBA58CB11 /* Optimize */,
+				73586FF2FBD57EAF3399B893 /* Formulas */,
+				07C0F724BF874748B57F16A8 /* Graph */,
+				7CACC82DEFB97A15D6F87163 /* Neural */,
+			);
+			productName = SDSTKStudio;
+			productReference = 1FC24303F50249FA738AF94F /* SDSTKStudio.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		4FF97ECF9F6462D567881C59 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = YES;
+				LastUpgradeCheck = 1430;
+				TargetAttributes = {
+					A5AC4B5C9F3C4A7984B744F9 = {
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = 1F0C5A14FD65B1C77AFC13FB /* Build configuration list for PBXProject "SDSTKStudio" */;
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				Base,
+				en,
+			);
+			mainGroup = 754399502BE03FB8B88B9F77;
+			minimizedProjectReferenceProxies = 1;
+			packageReferences = (
+				79511E397EFDCD984D221232 /* XCLocalSwiftPackageReference "../Downloads/SwiftSci/DataScience" */,
+				52B7DF750D588B55743AC738 /* XCLocalSwiftPackageReference "../Downloads/SwiftSci/Formulas" */,
+				2B1E0309AC00811A3FE330AF /* XCLocalSwiftPackageReference "../Downloads/SwiftSci/Graph" */,
+				D1EE3A3A3CE951D5649AD2DD /* XCLocalSwiftPackageReference "../Downloads/SwiftSci/Neural" */,
+				7673D591185847E6F107B71F /* XCLocalSwiftPackageReference "../Downloads/SwiftSci/Optimize" */,
+				289A9E99F23DD78AA03C0AB2 /* XCLocalSwiftPackageReference "../Downloads/SwiftSci/Signal" */,
+				4895186843E191F74C214EAC /* XCLocalSwiftPackageReference "../Downloads/SwiftSci/Text" */,
+				6F2B51A47D77B2FF565DF230 /* XCLocalSwiftPackageReference "../Downloads/SwiftSci/TimeSeries" */,
+			);
+			preferredProjectObjectVersion = 77;
+			productRefGroup = 32B1665F5896F4ED54DFEC59 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				A5AC4B5C9F3C4A7984B744F9 /* SDSTKStudio */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		A839302951746B6FE3476506 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BFF168A02A6C713EDCFBCF75 /* 01-Classify-Iris.sdstkflow in Resources */,
+				A92DDE63549419F0BF84A6BF /* 02-Explore-Data.sdstkflow in Resources */,
+				82816C37E76B3BB98CB9E9D7 /* 03-Regression-Demo.sdstkflow in Resources */,
+				5059ACB5AB5ABDB151E32249 /* 04-Unsupervised-Clustering.sdstkflow in Resources */,
+				9E4BF0B81EB6A72A4E792F57 /* 05-Signal-FFT-Demo.sdstkflow in Resources */,
+				EEEA529FD7CEFDC93B7D66A2 /* 06-TimeSeries-Autocorrelation.sdstkflow in Resources */,
+				936F3C4986F0DC7376927D35 /* 07-Optimize-CurveFit.sdstkflow in Resources */,
+				6951217F8B977065C60A3AB9 /* 08-Text-Similarity.sdstkflow in Resources */,
+				70507B5BD46CB4CD0C489903 /* 09-Graph-ShortestPath.sdstkflow in Resources */,
+				6CD19E295E34AD88E1B25C48 /* 10-Formulas-Physics.sdstkflow in Resources */,
+				4A30C248170A13D8949C82A1 /* 11-Speed-Benchmark.sdstkflow in Resources */,
+				370A94F93FBE09C6FB54B4C0 /* Assets.xcassets in Resources */,
+				423EE8564620DBA447C90C1C /* icon-ios.svg in Resources */,
+				765BAD757ADF55FEF8BE09DA /* icon-macos.svg in Resources */,
+				08C420A4D32E20985F1F45FD /* iris.csv in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		576B21F40869AF0F12B0A210 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C160D377613A916263E18275 /* ACFWidget.swift in Sources */,
+				B03D5AF94E078FD38D38D31E /* BarChartWidget.swift in Sources */,
+				4CC5F610C4C4DF01EBAC847C /* BenchmarkWidget.swift in Sources */,
+				198FEAFEEB718951219BB98D /* BoxPlotWidget.swift in Sources */,
+				EE4A484EE596101B92E3F137 /* CSVFileWidget.swift in Sources */,
+				0832CCA0EA236E9BA4F1D046 /* CanvasGridBackground.swift in Sources */,
+				EA09600CB9EF54819E114975 /* CanvasLayout.swift in Sources */,
+				8AEC4409F4565A6C082582F5 /* CanvasView.swift in Sources */,
+				A2EF7D7E89B61BEEBFFC7276 /* ChartExport.swift in Sources */,
+				6A172F8BB2CCF23CDBB62F81 /* ChartViews.swift in Sources */,
+				5E6F9009AB0917EBB27EC289 /* ConcatenateWidget.swift in Sources */,
+				87CB25A75182E58B4A70F699 /* ConfusionMatrixWidget.swift in Sources */,
+				3CA52F5D890ADB67EB761F20 /* CoordinatorWidget.swift in Sources */,
+				E9923AF5F9B28B301DCC499C /* CoreMLExpertWidget.swift in Sources */,
+				DBB8DE1CF03618049CA9A014 /* CoreMLTabularExpertWidget.swift in Sources */,
+				C176F3674DA8B6E6F4672137 /* CorrelationHeatmapWidget.swift in Sources */,
+				0054B6D187B954CB1A0188AA /* CurveFitWidget.swift in Sources */,
+				4CAC2B92A98D6E4F5F6FA078 /* DataInfoWidget.swift in Sources */,
+				038269DF5A03C801251D0491 /* DataTableWidget.swift in Sources */,
+				23F4D5AF2EBB206C7F062A42 /* DecisionTreeClassifierWidget.swift in Sources */,
+				652A7C968B42AD653065DE17 /* DecisionTreeRegressorWidget.swift in Sources */,
+				0A8B9F18523F8C499022D401 /* ExecutionEngine.swift in Sources */,
+				45DB3B6C08C72DA5ED664BCE /* ExpertSupport.swift in Sources */,
+				4612948FDC58E326C2E125BC /* FFTWidget.swift in Sources */,
+				982B047D1E948AEFD44A1638 /* FeatureConstructorWidget.swift in Sources */,
+				462B45795A7EA01DCCB0BE85 /* GettingStartedView.swift in Sources */,
+				50A3781546273F8EBCF3819E /* GradientBoostingRegressorWidget.swift in Sources */,
+				054B0AEB53EDC32450A40E0A /* HistogramWidget.swift in Sources */,
+				1509AD92D5AB2CED3DC6AF06 /* ImageFileWidget.swift in Sources */,
+				A2841EBD8A0A21FA81A510B7 /* ImputeWidget.swift in Sources */,
+				DAA33FDD919C4E223B91836D /* InspectorPanel.swift in Sources */,
+				D785C1D7C4DC61479C8362BE /* IrisExampleWidget.swift in Sources */,
+				4E711C86C75C1D876817C705 /* KMeansWidget.swift in Sources */,
+				A35213144C7BC3120C287916 /* LinearRegressionWidget.swift in Sources */,
+				08D81D61464B21F8655EDA7D /* LinkView.swift in Sources */,
+				CC82BB8AF520264EFB3B2407 /* LogisticRegressionWidget.swift in Sources */,
+				8D8700C136DF419B3952A5B8 /* MLPClassifierWidget.swift in Sources */,
+				698AE5D5BF7A4A0A1EC41BA3 /* MLPRegressorWidget.swift in Sources */,
+				C882D15B087D45A26A7ED325 /* MemStackerWidget.swift in Sources */,
+				E7F2A9023EC6E91DC91F47AA /* NodeView.swift in Sources */,
+				C0F7EA9BA86F1CFDD3356B7A /* NormalizeWidget.swift in Sources */,
+				E6F9663E379B69001E452AAF /* OnDeviceExpertTrainer.swift in Sources */,
+				B19B75D85D9431FD5D80ACE1 /* OutlierDetectionWidget.swift in Sources */,
+				0AC7AEBF96AF953853FA9CAC /* PCAWidget.swift in Sources */,
+				775CDD246F423A5319600809 /* PaletteView.swift in Sources */,
+				87E2EFB1A387ACDB98F4B2E6 /* ParquetFileWidget.swift in Sources */,
+				0E1134BBEFEB8AC8ACAF1D6D /* Ports.swift in Sources */,
+				323361DD4DE4E493C9D258D1 /* ProjectileMotionWidget.swift in Sources */,
+				DB2583E7AA9471E522C9C217 /* RandomForestClassifierWidget.swift in Sources */,
+				00489FDD5855EAA0FEE23F02 /* RankWidget.swift in Sources */,
+				57916A5DBB0BDAD81AA40450 /* ResearchExpertWidget.swift in Sources */,
+				D7FE66A5CF99C2B45D77EBCA /* RouteExampleWidget.swift in Sources */,
+				20ECF53639D617D8F1A9EDAE /* SDSTKStudioApp.swift in Sources */,
+				6667523706382D95047EEEDF /* SamplerWidget.swift in Sources */,
+				F3E269F46925921F2727D559 /* SaveDataWidget.swift in Sources */,
+				449C2BA60E29BC64A1E2408B /* ScatterPlotWidget.swift in Sources */,
+				07461F0B5BFADB8BC7C499D8 /* SelectColumnsWidget.swift in Sources */,
+				41A81AF53ECD14BD91AE4BD2 /* ShortestPathWidget.swift in Sources */,
+				691BE59BB76AC1065E2F5859 /* StudioWidget.swift in Sources */,
+				20BC5874A375802DF9E93F24 /* SyntheticSignalWidget.swift in Sources */,
+				1B48213B672F7A037FF37699 /* TableGridView.swift in Sources */,
+				830316B7BB6B2B21F64CD82B /* TestAndScoreRegressorWidget.swift in Sources */,
+				433493FB39C4379F4E7CC370 /* TestAndScoreWidget.swift in Sources */,
+				BDEBCEE6A556E4A596E5A0F8 /* TextPromptWidget.swift in Sources */,
+				9630FCEC0F46C05BD22CF879 /* TextSampleWidget.swift in Sources */,
+				BA7C60FBB0E4A295CEF05DB7 /* TextSimilarityWidget.swift in Sources */,
+				4073A70E6F74A3554FCDC388 /* WidgetCatalog.swift in Sources */,
+				C42D1BD403DFC95AE77218E0 /* WorkflowDocument.swift in Sources */,
+				CF92936A2C170F5533B1BCD8 /* WorkflowDocumentData.swift in Sources */,
+				17761694E368983559680BC6 /* WorkflowGraph.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		2F05B8BCD439CACFC510572C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 26.0;
+				MACOSX_DEPLOYMENT_TARGET = 26.0;
+				MARKETING_VERSION = 0.1.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = auto;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_STRICT_CONCURRENCY = targeted;
+				SWIFT_VERSION = 6.0;
+			};
+			name = Release;
+		};
+		5D63A237815D758C2DF2D175 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				"CODE_SIGN_ENTITLEMENTS[sdk=macosx*]" = Resources/SDSTKStudio.macOS.entitlements;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 2GG83KXEYW;
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = "Generated/SDSTKStudio-Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = org.sdstk.studio.SDSTKStudio;
+				PRODUCT_NAME = SDSTKStudio;
+				SDKROOT = auto;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SUPPORTS_XR_DESIGNED_FOR_IPHONE_IPAD = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		82BB8F8170C2E7452685C3AC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"$(inherited)",
+					"DEBUG=1",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 26.0;
+				MACOSX_DEPLOYMENT_TARGET = 26.0;
+				MARKETING_VERSION = 0.1.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = auto;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_STRICT_CONCURRENCY = targeted;
+				SWIFT_VERSION = 6.0;
+			};
+			name = Debug;
+		};
+		948347BD6F7A87C6F3680F05 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				"CODE_SIGN_ENTITLEMENTS[sdk=macosx*]" = Resources/SDSTKStudio.macOS.entitlements;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 2GG83KXEYW;
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = "Generated/SDSTKStudio-Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = org.sdstk.studio.SDSTKStudio;
+				PRODUCT_NAME = SDSTKStudio;
+				SDKROOT = auto;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SUPPORTS_XR_DESIGNED_FOR_IPHONE_IPAD = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		1F0C5A14FD65B1C77AFC13FB /* Build configuration list for PBXProject "SDSTKStudio" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				82BB8F8170C2E7452685C3AC /* Debug */,
+				2F05B8BCD439CACFC510572C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		E298C32689C6B9BD7324817B /* Build configuration list for PBXNativeTarget "SDSTKStudio" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5D63A237815D758C2DF2D175 /* Debug */,
+				948347BD6F7A87C6F3680F05 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCLocalSwiftPackageReference section */
+		289A9E99F23DD78AA03C0AB2 /* XCLocalSwiftPackageReference "../Downloads/SwiftSci/Signal" */ = {
+			isa = XCLocalSwiftPackageReference;
+			relativePath = ../Downloads/SwiftSci/Signal;
+		};
+		2B1E0309AC00811A3FE330AF /* XCLocalSwiftPackageReference "../Downloads/SwiftSci/Graph" */ = {
+			isa = XCLocalSwiftPackageReference;
+			relativePath = ../Downloads/SwiftSci/Graph;
+		};
+		4895186843E191F74C214EAC /* XCLocalSwiftPackageReference "../Downloads/SwiftSci/Text" */ = {
+			isa = XCLocalSwiftPackageReference;
+			relativePath = ../Downloads/SwiftSci/Text;
+		};
+		52B7DF750D588B55743AC738 /* XCLocalSwiftPackageReference "../Downloads/SwiftSci/Formulas" */ = {
+			isa = XCLocalSwiftPackageReference;
+			relativePath = ../Downloads/SwiftSci/Formulas;
+		};
+		6F2B51A47D77B2FF565DF230 /* XCLocalSwiftPackageReference "../Downloads/SwiftSci/TimeSeries" */ = {
+			isa = XCLocalSwiftPackageReference;
+			relativePath = ../Downloads/SwiftSci/TimeSeries;
+		};
+		7673D591185847E6F107B71F /* XCLocalSwiftPackageReference "../Downloads/SwiftSci/Optimize" */ = {
+			isa = XCLocalSwiftPackageReference;
+			relativePath = ../Downloads/SwiftSci/Optimize;
+		};
+		79511E397EFDCD984D221232 /* XCLocalSwiftPackageReference "../Downloads/SwiftSci/DataScience" */ = {
+			isa = XCLocalSwiftPackageReference;
+			relativePath = ../Downloads/SwiftSci/DataScience;
+		};
+		D1EE3A3A3CE951D5649AD2DD /* XCLocalSwiftPackageReference "../Downloads/SwiftSci/Neural" */ = {
+			isa = XCLocalSwiftPackageReference;
+			relativePath = ../Downloads/SwiftSci/Neural;
+		};
+/* End XCLocalSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		07C0F724BF874748B57F16A8 /* Graph */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = Graph;
+		};
+		1E8FD2F4F404D7C69A723304 /* DataScience */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = DataScience;
+		};
+		51517120D88E38B1E8D6D88D /* Signal */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = Signal;
+		};
+		648A664B5F4EC661F00B1BFC /* Text */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = Text;
+		};
+		73586FF2FBD57EAF3399B893 /* Formulas */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = Formulas;
+		};
+		73B37B1EDA9BFE5EBA58CB11 /* Optimize */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = Optimize;
+		};
+		7BAA114CCC606AE9A2222937 /* TimeSeries */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = TimeSeries;
+		};
+		7CACC82DEFB97A15D6F87163 /* Neural */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = Neural;
+		};
+/* End XCSwiftPackageProductDependency section */
+	};
+	rootObject = 4FF97ECF9F6462D567881C59 /* Project object */;
+}
