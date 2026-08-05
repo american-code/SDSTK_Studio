@@ -1,14 +1,24 @@
 import Foundation
 
+/// Per-node progress reporting: the engine sets this before each widget run, and
+/// widgets may call it from their run(inputs:) implementation (which runs on @MainActor).
+/// All access is on the main actor so the unsafely-nonisolated static is safe in practice.
+enum EngineLocals {
+    nonisolated(unsafe) static var reportProgress: ((Double) -> Void)?
+}
+
 /// Drives live dataflow: a change to any node's params (or the links around it) marks that node
 /// and everything reachable downstream dirty, then re-runs dirty nodes in topological order.
 /// Memoization is implicit — a node not marked dirty keeps its last `.done` state and is skipped.
 @MainActor
 final class ExecutionEngine: ObservableObject {
     @Published private(set) var states: [UUID: NodeState] = [:]
+    /// Fractional progress (0…1) for nodes currently in .running state. Cleared on completion.
+    @Published private(set) var progress: [UUID: Double] = [:]
     let graph: WorkflowGraph
     private var dirty: Set<UUID> = []
     private var runID = 0
+    private var currentTask: Task<Void, Never>?
 
     init(graph: WorkflowGraph) {
         self.graph = graph
@@ -33,13 +43,15 @@ final class ExecutionEngine: ObservableObject {
 
     func removeNode(_ id: UUID) {
         states.removeValue(forKey: id)
+        progress.removeValue(forKey: id)
         dirty.remove(id)
     }
 
     private func scheduleRun() {
         runID += 1
         let thisRun = runID
-        Task { [weak self] in
+        currentTask?.cancel()
+        currentTask = Task { [weak self] in
             await self?.runDirty(generation: thisRun)
         }
     }
@@ -58,13 +70,21 @@ final class ExecutionEngine: ObservableObject {
     private func run(_ id: UUID) async {
         guard let node = graph.nodes[id] else { dirty.remove(id); return }
         states[id] = .running
+        progress[id] = 0
         do {
             let inputs = try graph.gatherInputs(for: id, states: states)
+            EngineLocals.reportProgress = { [weak self] fraction in
+                self?.progress[id] = max(0, min(1, fraction))
+            }
+            defer { EngineLocals.reportProgress = nil }
             let output = try await node.widget.run(inputs: inputs)
             states[id] = .done(output)
+        } catch is CancellationError {
+            states[id] = .idle
         } catch {
             states[id] = .failed("\(error)")
         }
+        progress.removeValue(forKey: id)
         dirty.remove(id)
     }
 }

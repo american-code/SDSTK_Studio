@@ -114,6 +114,7 @@ struct CanvasView: View {
                     NodeView(
                         node: node,
                         state: engine.state(for: node.id),
+                        runProgress: engine.progress[node.id],
                         isSelected: node.id == selectedNodeID,
                         onSelect: { selectedNodeID = node.id },
                         onDelete: { deleteNode(node.id) },

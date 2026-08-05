@@ -6,6 +6,7 @@ import SwiftUI
 struct NodeView: View {
     @ObservedObject var node: WidgetNode
     let state: NodeState
+    var runProgress: Double? = nil   // 0…1 when widget reports fractional progress
     let isSelected: Bool
     let onSelect: () -> Void
     let onDelete: () -> Void
@@ -97,7 +98,11 @@ struct NodeView: View {
         case .idle:
             Circle().fill(.gray).frame(width: 8, height: 8)
         case .running:
-            ProgressView().scaleEffect(0.5)
+            if let p = runProgress {
+                ProgressView(value: p).progressViewStyle(.linear).frame(width: 24)
+            } else {
+                ProgressView().scaleEffect(0.5)
+            }
         case .done:
             Circle().fill(.green).frame(width: 8, height: 8)
         case .failed:

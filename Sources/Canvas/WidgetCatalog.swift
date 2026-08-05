@@ -59,6 +59,8 @@ enum WidgetCatalog {
         entry(TestAndScoreWidget.self) { TestAndScoreWidget() },
         entry(TestAndScoreRegressorWidget.self) { TestAndScoreRegressorWidget() },
         entry(ConfusionMatrixWidget.self) { ConfusionMatrixWidget() },
+        entry(ROCAUCWidget.self) { ROCAUCWidget() },
+        entry(CrossValidationWidget.self) { CrossValidationWidget() },
         // Unsupervised
         entry(KMeansWidget.self) { KMeansWidget() },
         entry(PCAWidget.self) { PCAWidget() },
