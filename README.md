@@ -1,6 +1,6 @@
 # SDSTK Studio
 
-A universal iPad + Mac canvas app for visual data-science workflows, built on the [SDSTK](https://github.com/american-code/SwiftSci) Swift data-science stack.
+A universal iPad + Mac canvas app for visual data-science workflows, built on the [SDSTK](https://github.com/american-code/SDSTK) Swift data-science stack.
 
 Drag-and-drop nodes — Data, Transform, Model, Visualize, Score, Export — connect into pipelines that run locally on-device. Workflows save as `.sdstkflow` documents; trained expert bundles export as `.mbexpert` packages.
 
