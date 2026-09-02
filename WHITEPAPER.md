@@ -18,7 +18,7 @@ directly on Apple Silicon's unified memory and GPU, with no Python interpreter, 
 translation layer in between.
 
 The result is a single native app that is simultaneously a usable data-science tool and a working
-demonstration of SDSTK's range: 40 widgets across 11 categories, several of which have no
+demonstration of SDSTK's range: 51 widgets across 12 categories, several of which have no
 equivalent in Orange itself.
 
 ---
@@ -52,7 +52,7 @@ the app re-implements data-science logic; it only exposes it.
 | **Frame** | pandas | Columnar `DataFrame`, group-by, joins, windows, nulls, CSV/Arrow/Parquet I/O — swappable `.cpu`/`.mlx` numeric backend |
 | **Sci** (`LinAlg` + `Stats`) | SciPy | Linear algebra (BLAS/LAPACK via Accelerate), descriptive stats, hypothesis tests, distributions |
 | **Learn** | scikit-learn | Linear/logistic regression, decision trees, ensembles, k-means, PCA, cross-validation |
-| **Neural** | PyTorch (training loop) | MLX-native MLP/CNN/RNN/LSTM training with a compiled train loop *(not yet wired into Studio — see Roadmap)* |
+| **Neural** | PyTorch (training loop) | MLX-native MLP/CNN/RNN/LSTM training with a compiled train loop. MLP regression and classification ship as Studio widgets; the CNN/RNN/LSTM trainers are library-only so far |
 | **Plot** | matplotlib | Headless SVG rendering — Studio's export path, not its live view |
 | **Signal** | SciPy.signal | FFT/STFT, windowing, filter design, peak detection |
 | **Text** | spaCy / NLTK | Tokenization, TF-IDF, cosine similarity |
@@ -75,8 +75,10 @@ copy.
 Every widget conforms to a single `StudioWidget` protocol: a stable type identifier, a category,
 declared **typed input and output ports** (`.table`, `.classifierLearner`, `.regressorLearner`,
 `.scores`, `.chart`), a `run(inputs:)` function, and a SwiftUI inspector view for its parameters.
-Ports are typed deliberately — a regressor can't be wired into a slot expecting a classifier, and
-the mistake is caught by the type system, not a runtime check.
+Ports are typed deliberately — a regressor can't be wired into a slot expecting a classifier.
+Note that `PortKind` is a runtime value, not a compile-time type: incompatible links are rejected
+when you draw them, by the `spec.kind == fromSpec.kind` filter in `CanvasView.completeLink`, rather
+than refused by the Swift type checker. The guarantee is real but it is enforced at wiring time.
 
 ### Live dataflow
 
@@ -103,7 +105,7 @@ assumption the type system can't verify into a checked runtime guarantee instead
 
 ---
 
-## 4. Capability Survey: 40 Widgets, 11 Categories
+## 4. Capability Survey: 51 Widgets, 12 Categories
 
 | Category | Widgets | Highlights |
 |---|---|---|
@@ -139,9 +141,12 @@ decisively on compute-bound work, and is not automatically faster on memory-boun
 a plain sum at moderate sizes — a real result, not a marketing one.
 
 Because Frame defaults to the `.mlx` backend, and MLX's scheduler will abort the process outright
-if its Metal shader library (`mlx.metallib`) isn't present, Studio ships a build-time script that
-fetches the correct prebuilt shader library automatically, and pins the entire rest of the app to
-the `.cpu` backend by default — the Benchmark widget is the only code path that ever touches
+if its Metal shader library (`mlx.metallib`) isn't present, Studio pins the entire app to the
+`.cpu` backend at launch (`SDSTKStudioApp`) and gates every `.mlx` code path behind a
+`BenchmarkWidget.metallibAvailable` check. There is no build script that fetches the shader
+library — an earlier draft of this paper described one, but `project.yml` declares no build
+phases and none exists in the repository. Supply `mlx.metallib` yourself if you want the MLX
+paths active — the Benchmark widget is the only code path that ever touches
 `.mlx`, and it checks the shader library's presence before doing so. This was not left as a
 theoretical safeguard: the exact failure mode (an immediate, clearly-logged process exit — not a
 silent crash) and the exact success path were both reproduced directly during development, and
