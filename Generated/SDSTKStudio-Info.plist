@@ -52,7 +52,7 @@
 	<key>LSSupportsOpeningDocumentsInPlace</key>
 	<true/>
 	<key>NSHumanReadableCopyright</key>
-	<string>Copyright © 2026 SDSTK. MIT licensed.</string>
+	<string>Copyright © 2026 SDSTK. AGPL-3.0-or-later; commercial licensing available.</string>
 	<key>UILaunchScreen</key>
 	<dict/>
 	<key>UISupportedInterfaceOrientations~ipad</key>

@@ -65,6 +65,7 @@
 		8AEC4409F4565A6C082582F5 /* CanvasView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 521B0980F1A7B69E131E44FF /* CanvasView.swift */; };
 		8D8700C136DF419B3952A5B8 /* MLPClassifierWidget.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B37A2DC6766209CE28969B8 /* MLPClassifierWidget.swift */; };
 		936F3C4986F0DC7376927D35 /* 07-Optimize-CurveFit.sdstkflow in Resources */ = {isa = PBXBuildFile; fileRef = 2715B2617F63336DAC3D8AB2 /* 07-Optimize-CurveFit.sdstkflow */; };
+		947BC06798B9456103127DB0 /* CrossValidationWidget.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7CAA68C7FE18D0B0F9BDA46A /* CrossValidationWidget.swift */; };
 		9630FCEC0F46C05BD22CF879 /* TextSampleWidget.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59DCBC3151C8C6E47E69C1CB /* TextSampleWidget.swift */; };
 		982B047D1E948AEFD44A1638 /* FeatureConstructorWidget.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2210E6C074EA1AFE4121265 /* FeatureConstructorWidget.swift */; };
 		9E4BF0B81EB6A72A4E792F57 /* 05-Signal-FFT-Demo.sdstkflow in Resources */ = {isa = PBXBuildFile; fileRef = 54A08F53903CC48AD5B60336 /* 05-Signal-FFT-Demo.sdstkflow */; };
@@ -82,6 +83,7 @@
 		C160D377613A916263E18275 /* ACFWidget.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4210A8DF530C29174BDABE6 /* ACFWidget.swift */; };
 		C176F3674DA8B6E6F4672137 /* CorrelationHeatmapWidget.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BAA0269185D38B1B613FF44 /* CorrelationHeatmapWidget.swift */; };
 		C42D1BD403DFC95AE77218E0 /* WorkflowDocument.swift in Sources */ = {isa = PBXBuildFile; fileRef = C58F9627FE0B09E3D4F18F16 /* WorkflowDocument.swift */; };
+		C6B2E0B88EF43EFB0F4E4B2C /* ROCAUCWidget.swift in Sources */ = {isa = PBXBuildFile; fileRef = 083942AE73BF88C6C859901C /* ROCAUCWidget.swift */; };
 		C882D15B087D45A26A7ED325 /* MemStackerWidget.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1A78A372A39C1A413AFFD37 /* MemStackerWidget.swift */; };
 		CC82BB8AF520264EFB3B2407 /* LogisticRegressionWidget.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95F1E50F3AFE13F2A0A680E1 /* LogisticRegressionWidget.swift */; };
 		CF92936A2C170F5533B1BCD8 /* WorkflowDocumentData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CAA268D61DA057A6ADAEF52 /* WorkflowDocumentData.swift */; };
@@ -104,8 +106,9 @@
 
 /* Begin PBXFileReference section */
 		06AB46044B2121C17581D508 /* ChartViews.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChartViews.swift; sourceTree = "<group>"; };
+		083942AE73BF88C6C859901C /* ROCAUCWidget.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ROCAUCWidget.swift; sourceTree = "<group>"; };
 		0CC56F3C6A4E2FBF52BB4472 /* Neural */ = {isa = PBXFileReference; lastKnownFileType = folder; name = Neural; path = ../Downloads/SwiftSci/Neural; sourceTree = SOURCE_ROOT; };
-		0CCE7E5A4005B4CABCD27CB0 /* 10-Formulas-Physics.sdstkflow */ = {isa = PBXFileReference; lastKnownFileType = text; path = "10-Formulas-Physics.sdstkflow"; sourceTree = "<group>"; };
+		0CCE7E5A4005B4CABCD27CB0 /* 10-Formulas-Physics.sdstkflow */ = {isa = PBXFileReference; path = "10-Formulas-Physics.sdstkflow"; sourceTree = "<group>"; };
 		0CD1753865592414E5D9A043 /* ImageFileWidget.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageFileWidget.swift; sourceTree = "<group>"; };
 		0EA2CFD9806703948B2FDA43 /* ParquetFileWidget.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ParquetFileWidget.swift; sourceTree = "<group>"; };
 		0F17A10C2880135211E5C2F8 /* GettingStartedView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GettingStartedView.swift; sourceTree = "<group>"; };
@@ -113,12 +116,12 @@
 		1141F987291B71B81653A8F6 /* TestAndScoreRegressorWidget.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestAndScoreRegressorWidget.swift; sourceTree = "<group>"; };
 		11DB520175FCE8D1DED6073A /* Graph */ = {isa = PBXFileReference; lastKnownFileType = folder; name = Graph; path = ../Downloads/SwiftSci/Graph; sourceTree = SOURCE_ROOT; };
 		1BA82F9DE9C201F53FC00D59 /* Formulas */ = {isa = PBXFileReference; lastKnownFileType = folder; name = Formulas; path = ../Downloads/SwiftSci/Formulas; sourceTree = SOURCE_ROOT; };
-		1FC24303F50249FA738AF94F /* SDSTKStudio.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SDSTKStudio.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		1FC24303F50249FA738AF94F /* SDSTKStudio.app */ = {isa = PBXFileReference; includeInIndex = 0; lastKnownFileType = wrapper.application; path = SDSTKStudio.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		236FEC40C4BAAC2858E8288B /* SDSTKStudioApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SDSTKStudioApp.swift; sourceTree = "<group>"; };
-		261641840C8C416707E7A542 /* 06-TimeSeries-Autocorrelation.sdstkflow */ = {isa = PBXFileReference; lastKnownFileType = text; path = "06-TimeSeries-Autocorrelation.sdstkflow"; sourceTree = "<group>"; };
-		2715B2617F63336DAC3D8AB2 /* 07-Optimize-CurveFit.sdstkflow */ = {isa = PBXFileReference; lastKnownFileType = text; path = "07-Optimize-CurveFit.sdstkflow"; sourceTree = "<group>"; };
+		261641840C8C416707E7A542 /* 06-TimeSeries-Autocorrelation.sdstkflow */ = {isa = PBXFileReference; path = "06-TimeSeries-Autocorrelation.sdstkflow"; sourceTree = "<group>"; };
+		2715B2617F63336DAC3D8AB2 /* 07-Optimize-CurveFit.sdstkflow */ = {isa = PBXFileReference; path = "07-Optimize-CurveFit.sdstkflow"; sourceTree = "<group>"; };
 		2740EF7E01E346AEC40A1755 /* SDSTKStudio.macOS.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = SDSTKStudio.macOS.entitlements; sourceTree = "<group>"; };
-		286C8896F5750B0F2559B2CF /* iris.csv */ = {isa = PBXFileReference; lastKnownFileType = text; path = iris.csv; sourceTree = "<group>"; };
+		286C8896F5750B0F2559B2CF /* iris.csv */ = {isa = PBXFileReference; path = iris.csv; sourceTree = "<group>"; };
 		29C3D528E0B7C316A043B772 /* TimeSeries */ = {isa = PBXFileReference; lastKnownFileType = folder; name = TimeSeries; path = ../Downloads/SwiftSci/TimeSeries; sourceTree = SOURCE_ROOT; };
 		2E8F5B98DA6F4E3AF6707EED /* CoreMLExpertWidget.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreMLExpertWidget.swift; sourceTree = "<group>"; };
 		353B56A1EE070A57C2589F9B /* HistogramWidget.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HistogramWidget.swift; sourceTree = "<group>"; };
@@ -132,31 +135,32 @@
 		521B0980F1A7B69E131E44FF /* CanvasView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CanvasView.swift; sourceTree = "<group>"; };
 		5229B03612755AD59A773A2D /* RankWidget.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RankWidget.swift; sourceTree = "<group>"; };
 		52652943CB965E60706C1A0C /* PaletteView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PaletteView.swift; sourceTree = "<group>"; };
-		54A08F53903CC48AD5B60336 /* 05-Signal-FFT-Demo.sdstkflow */ = {isa = PBXFileReference; lastKnownFileType = text; path = "05-Signal-FFT-Demo.sdstkflow"; sourceTree = "<group>"; };
+		54A08F53903CC48AD5B60336 /* 05-Signal-FFT-Demo.sdstkflow */ = {isa = PBXFileReference; path = "05-Signal-FFT-Demo.sdstkflow"; sourceTree = "<group>"; };
 		54C76036BB27CF72CF6D6015 /* ConfusionMatrixWidget.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConfusionMatrixWidget.swift; sourceTree = "<group>"; };
-		56EBB1718B792A012CDD2431 /* 08-Text-Similarity.sdstkflow */ = {isa = PBXFileReference; lastKnownFileType = text; path = "08-Text-Similarity.sdstkflow"; sourceTree = "<group>"; };
+		56EBB1718B792A012CDD2431 /* 08-Text-Similarity.sdstkflow */ = {isa = PBXFileReference; path = "08-Text-Similarity.sdstkflow"; sourceTree = "<group>"; };
 		59DCBC3151C8C6E47E69C1CB /* TextSampleWidget.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextSampleWidget.swift; sourceTree = "<group>"; };
 		5A665751F972F5AA4CFF263C /* TestAndScoreWidget.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestAndScoreWidget.swift; sourceTree = "<group>"; };
 		5E24EFC41B95B4A96457E722 /* CanvasLayout.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CanvasLayout.swift; sourceTree = "<group>"; };
 		61E56E1AB35C08D85AF90864 /* ConcatenateWidget.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConcatenateWidget.swift; sourceTree = "<group>"; };
-		63EAF1BB96E3C1CB52866736 /* icon-macos.svg */ = {isa = PBXFileReference; lastKnownFileType = text; path = "icon-macos.svg"; sourceTree = "<group>"; };
+		63EAF1BB96E3C1CB52866736 /* icon-macos.svg */ = {isa = PBXFileReference; path = "icon-macos.svg"; sourceTree = "<group>"; };
 		7262B497E86DDC170A4D351A /* Text */ = {isa = PBXFileReference; lastKnownFileType = folder; name = Text; path = ../Downloads/SwiftSci/Text; sourceTree = SOURCE_ROOT; };
 		7432513A47F7BBAD6964C729 /* RandomForestClassifierWidget.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RandomForestClassifierWidget.swift; sourceTree = "<group>"; };
-		79A93620A46A1F8F3571E7FB /* icon-ios.svg */ = {isa = PBXFileReference; lastKnownFileType = text; path = "icon-ios.svg"; sourceTree = "<group>"; };
+		79A93620A46A1F8F3571E7FB /* icon-ios.svg */ = {isa = PBXFileReference; path = "icon-ios.svg"; sourceTree = "<group>"; };
 		7A807537418BFB4AD0BA7EAD /* ExpertSupport.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExpertSupport.swift; sourceTree = "<group>"; };
+		7CAA68C7FE18D0B0F9BDA46A /* CrossValidationWidget.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CrossValidationWidget.swift; sourceTree = "<group>"; };
 		7E1C1E935FF2712B8248A494 /* StudioWidget.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StudioWidget.swift; sourceTree = "<group>"; };
 		7F115A8B2D5A29B3E76C50C2 /* ChartExport.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChartExport.swift; sourceTree = "<group>"; };
 		8293B50B04CBE3ACAF06FE09 /* ShortestPathWidget.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShortestPathWidget.swift; sourceTree = "<group>"; };
 		8351BFC8A0D82565AED808FC /* CurveFitWidget.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurveFitWidget.swift; sourceTree = "<group>"; };
 		84024032EBE8B4FE0AD2B691 /* CoordinatorWidget.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoordinatorWidget.swift; sourceTree = "<group>"; };
 		85E016EBF5FEE849D4D9CADE /* GradientBoostingRegressorWidget.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GradientBoostingRegressorWidget.swift; sourceTree = "<group>"; };
-		87E1511F2CAA11648EECBC55 /* 04-Unsupervised-Clustering.sdstkflow */ = {isa = PBXFileReference; lastKnownFileType = text; path = "04-Unsupervised-Clustering.sdstkflow"; sourceTree = "<group>"; };
+		87E1511F2CAA11648EECBC55 /* 04-Unsupervised-Clustering.sdstkflow */ = {isa = PBXFileReference; path = "04-Unsupervised-Clustering.sdstkflow"; sourceTree = "<group>"; };
 		8AAFC0C95BFF5913B47ABB1C /* SelectColumnsWidget.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelectColumnsWidget.swift; sourceTree = "<group>"; };
 		8B37A2DC6766209CE28969B8 /* MLPClassifierWidget.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MLPClassifierWidget.swift; sourceTree = "<group>"; };
-		8B7E784F027A14256376B7F6 /* 03-Regression-Demo.sdstkflow */ = {isa = PBXFileReference; lastKnownFileType = text; path = "03-Regression-Demo.sdstkflow"; sourceTree = "<group>"; };
+		8B7E784F027A14256376B7F6 /* 03-Regression-Demo.sdstkflow */ = {isa = PBXFileReference; path = "03-Regression-Demo.sdstkflow"; sourceTree = "<group>"; };
 		8C4AF6F9A41FDBD29545E048 /* CanvasGridBackground.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CanvasGridBackground.swift; sourceTree = "<group>"; };
 		8CAA268D61DA057A6ADAEF52 /* WorkflowDocumentData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WorkflowDocumentData.swift; sourceTree = "<group>"; };
-		8EB3ABD6AB17BFDDCE435AFE /* 09-Graph-ShortestPath.sdstkflow */ = {isa = PBXFileReference; lastKnownFileType = text; path = "09-Graph-ShortestPath.sdstkflow"; sourceTree = "<group>"; };
+		8EB3ABD6AB17BFDDCE435AFE /* 09-Graph-ShortestPath.sdstkflow */ = {isa = PBXFileReference; path = "09-Graph-ShortestPath.sdstkflow"; sourceTree = "<group>"; };
 		95F1E50F3AFE13F2A0A680E1 /* LogisticRegressionWidget.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LogisticRegressionWidget.swift; sourceTree = "<group>"; };
 		971014220F08469F537285DA /* TextSimilarityWidget.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextSimilarityWidget.swift; sourceTree = "<group>"; };
 		9BAA0269185D38B1B613FF44 /* CorrelationHeatmapWidget.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CorrelationHeatmapWidget.swift; sourceTree = "<group>"; };
@@ -168,7 +172,7 @@
 		A2210E6C074EA1AFE4121265 /* FeatureConstructorWidget.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeatureConstructorWidget.swift; sourceTree = "<group>"; };
 		A3BD21F7BC169BAF5F4C9EB8 /* OnDeviceExpertTrainer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnDeviceExpertTrainer.swift; sourceTree = "<group>"; };
 		A71C4D0E480F92733C32F545 /* CSVFileWidget.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CSVFileWidget.swift; sourceTree = "<group>"; };
-		A8600AEC7DA5AAD9D502DC57 /* 11-Speed-Benchmark.sdstkflow */ = {isa = PBXFileReference; lastKnownFileType = text; path = "11-Speed-Benchmark.sdstkflow"; sourceTree = "<group>"; };
+		A8600AEC7DA5AAD9D502DC57 /* 11-Speed-Benchmark.sdstkflow */ = {isa = PBXFileReference; path = "11-Speed-Benchmark.sdstkflow"; sourceTree = "<group>"; };
 		ACFF3D23C82A65F066140395 /* RouteExampleWidget.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RouteExampleWidget.swift; sourceTree = "<group>"; };
 		AFC8A00CA584F7048D36D7C5 /* IrisExampleWidget.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IrisExampleWidget.swift; sourceTree = "<group>"; };
 		B13575BC6C816EE7F3ED19CF /* ImputeWidget.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImputeWidget.swift; sourceTree = "<group>"; };
@@ -182,7 +186,7 @@
 		C02A920146CE0DDDECA52A47 /* WorkflowGraph.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WorkflowGraph.swift; sourceTree = "<group>"; };
 		C58F9627FE0B09E3D4F18F16 /* WorkflowDocument.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WorkflowDocument.swift; sourceTree = "<group>"; };
 		CED39F031270BDA89E54D650 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		D0695D385A6A8D8B8A560F98 /* 01-Classify-Iris.sdstkflow */ = {isa = PBXFileReference; lastKnownFileType = text; path = "01-Classify-Iris.sdstkflow"; sourceTree = "<group>"; };
+		D0695D385A6A8D8B8A560F98 /* 01-Classify-Iris.sdstkflow */ = {isa = PBXFileReference; path = "01-Classify-Iris.sdstkflow"; sourceTree = "<group>"; };
 		D40AC44F8E6AF917C3931FF7 /* Signal */ = {isa = PBXFileReference; lastKnownFileType = folder; name = Signal; path = ../Downloads/SwiftSci/Signal; sourceTree = SOURCE_ROOT; };
 		E30532F93C4AD88F6A58CF65 /* Optimize */ = {isa = PBXFileReference; lastKnownFileType = folder; name = Optimize; path = ../Downloads/SwiftSci/Optimize; sourceTree = SOURCE_ROOT; };
 		E4A2B1BB2FBCBAE92D5F5CC2 /* TableGridView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableGridView.swift; sourceTree = "<group>"; };
@@ -195,7 +199,7 @@
 		F39A08354DE48CE54AB00561 /* BarChartWidget.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BarChartWidget.swift; sourceTree = "<group>"; };
 		F4210A8DF530C29174BDABE6 /* ACFWidget.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ACFWidget.swift; sourceTree = "<group>"; };
 		F49E14B1B54912B813E98B80 /* ExecutionEngine.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExecutionEngine.swift; sourceTree = "<group>"; };
-		F66F806856280D35BA4EDF53 /* 02-Explore-Data.sdstkflow */ = {isa = PBXFileReference; lastKnownFileType = text; path = "02-Explore-Data.sdstkflow"; sourceTree = "<group>"; };
+		F66F806856280D35BA4EDF53 /* 02-Explore-Data.sdstkflow */ = {isa = PBXFileReference; path = "02-Explore-Data.sdstkflow"; sourceTree = "<group>"; };
 		F6D838EBF0A14485B210961A /* DataTableWidget.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataTableWidget.swift; sourceTree = "<group>"; };
 		FF08DA49D455B525AE356845 /* SamplerWidget.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SamplerWidget.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -268,6 +272,8 @@
 			isa = PBXGroup;
 			children = (
 				54C76036BB27CF72CF6D6015 /* ConfusionMatrixWidget.swift */,
+				7CAA68C7FE18D0B0F9BDA46A /* CrossValidationWidget.swift */,
+				083942AE73BF88C6C859901C /* ROCAUCWidget.swift */,
 				1141F987291B71B81653A8F6 /* TestAndScoreRegressorWidget.swift */,
 				5A665751F972F5AA4CFF263C /* TestAndScoreWidget.swift */,
 			);
@@ -623,6 +629,7 @@
 				E9923AF5F9B28B301DCC499C /* CoreMLExpertWidget.swift in Sources */,
 				DBB8DE1CF03618049CA9A014 /* CoreMLTabularExpertWidget.swift in Sources */,
 				C176F3674DA8B6E6F4672137 /* CorrelationHeatmapWidget.swift in Sources */,
+				947BC06798B9456103127DB0 /* CrossValidationWidget.swift in Sources */,
 				0054B6D187B954CB1A0188AA /* CurveFitWidget.swift in Sources */,
 				4CAC2B92A98D6E4F5F6FA078 /* DataInfoWidget.swift in Sources */,
 				038269DF5A03C801251D0491 /* DataTableWidget.swift in Sources */,
@@ -655,6 +662,7 @@
 				87E2EFB1A387ACDB98F4B2E6 /* ParquetFileWidget.swift in Sources */,
 				0E1134BBEFEB8AC8ACAF1D6D /* Ports.swift in Sources */,
 				323361DD4DE4E493C9D258D1 /* ProjectileMotionWidget.swift in Sources */,
+				C6B2E0B88EF43EFB0F4E4B2C /* ROCAUCWidget.swift in Sources */,
 				DB2583E7AA9471E522C9C217 /* RandomForestClassifierWidget.swift in Sources */,
 				00489FDD5855EAA0FEE23F02 /* RankWidget.swift in Sources */,
 				57916A5DBB0BDAD81AA40450 /* ResearchExpertWidget.swift in Sources */,
@@ -750,7 +758,6 @@
 				"CODE_SIGN_ENTITLEMENTS[sdk=macosx*]" = Resources/SDSTKStudio.macOS.entitlements;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 2GG83KXEYW;
 				ENABLE_PREVIEWS = YES;
 				INFOPLIST_FILE = "Generated/SDSTKStudio-Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -842,7 +849,6 @@
 				"CODE_SIGN_ENTITLEMENTS[sdk=macosx*]" = Resources/SDSTKStudio.macOS.entitlements;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 2GG83KXEYW;
 				ENABLE_PREVIEWS = YES;
 				INFOPLIST_FILE = "Generated/SDSTKStudio-Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (

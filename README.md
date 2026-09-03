@@ -20,6 +20,11 @@ parent/
 
 ## Build
 
+> `Generated/SDSTKStudio-Info.plist` and `SDSTKStudio.xcodeproj` are both produced by
+> `xcodegen generate` from `project.yml`. They are committed so the project opens without a
+> toolchain step, which means **they go stale if you add a source file or change project.yml and
+> forget to regenerate**. Run `xcodegen generate` before committing either kind of change.
+
 ```bash
 cd SDSTKStudio
 xcodegen generate
