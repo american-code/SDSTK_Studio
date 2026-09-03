@@ -15,3 +15,22 @@ You should have received a copy of the GNU Affero General Public License
 along with this program. If not, see <https://www.gnu.org/licenses/>.
 
 For commercial licensing inquiries: jmelton@americancode.org
+
+--------------------------------------------------------------------------------
+THIRD-PARTY COMPONENTS
+--------------------------------------------------------------------------------
+
+This product includes the following third-party software. Each component remains
+under its own license; the terms below apply to those components, not to
+SDSTKStudio itself.
+
+mlx-swift 0.31.4
+  https://github.com/ml-explore/mlx-swift
+  MIT License, Copyright (c) 2023 ml-explore
+
+swift-numerics 1.1.1
+  https://github.com/apple/swift-numerics
+  Apache License 2.0
+
+SwiftSci (DataScience, Signal, Text, TimeSeries, Optimize, Formulas, Graph, Neural)
+  MIT License, Copyright (c) 2026 J Melton
