@@ -50,6 +50,7 @@ struct CanvasView: View {
         } content: {
             canvasSurface
                 .navigationTitle("Canvas")
+                .navigationSplitViewColumnWidth(min: 400, ideal: 900, max: .infinity)
                 .toolbar {
                     ToolbarItem {
                         Menu {
@@ -73,13 +74,16 @@ struct CanvasView: View {
                     }
                 }
         } detail: {
-            if let id = selectedNodeID, let node = graph.nodes[id] {
-                InspectorPanel(node: node, state: engine.state(for: id), onChange: { [weak engine = engine] in engine?.markDirty(id) })
-                    .navigationTitle(node.widgetType.displayName)
-            } else {
-                ContentUnavailableView("Select a Widget", systemImage: "square.dashed",
-                                        description: Text("Add one from the palette, then tap it to edit its parameters here."))
+            Group {
+                if let id = selectedNodeID, let node = graph.nodes[id] {
+                    InspectorPanel(node: node, state: engine.state(for: id), onChange: { [weak engine = engine] in engine?.markDirty(id) })
+                        .navigationTitle(node.widgetType.displayName)
+                } else {
+                    ContentUnavailableView("Select a Widget", systemImage: "square.dashed",
+                                            description: Text("Add one from the palette, then tap it to edit its parameters here."))
+                }
             }
+            .navigationSplitViewColumnWidth(min: 280, ideal: 340, max: 500)
         }
         .sheet(isPresented: $showHelp) {
             GettingStartedView()
@@ -96,7 +100,8 @@ struct CanvasView: View {
         ScrollView([.horizontal, .vertical]) {
             ZStack(alignment: .topLeading) {
                 CanvasGridBackground()
-                    .frame(width: CanvasLayout.surfaceSize.width, height: CanvasLayout.surfaceSize.height)
+                    .frame(width: CanvasLayout.surfaceSize(for: graph.nodes.values).width,
+                           height: CanvasLayout.surfaceSize(for: graph.nodes.values).height)
 
                 ForEach(graph.links) { link in
                     if let from = portPosition(nodeID: link.fromNode, portName: link.fromPort, isOutput: true),
