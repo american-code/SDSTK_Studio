@@ -11,4 +11,6 @@ build/
 # Swift Package Manager
 .build/
 .swiftpm/
-Package.resolved
+# Package.resolved is intentionally tracked below — this is an application, not a library,
+# and Apple's own guidance is to commit it for apps so builds stay reproducible instead of
+# silently re-resolving to whatever the latest compatible dependency versions are.

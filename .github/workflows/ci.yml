@@ -1,0 +1,38 @@
+name: CI
+
+# A full `xcodebuild build` can't run here: this app depends on SwiftSci (DataScience,
+# Signal, Text, ...) via local `path:` package references — it isn't published, so a
+# generic CI runner has no way to fetch it. Documented honestly rather than faked with a
+# build step that would just fail forever.
+#
+# What this job DOES catch, without needing SwiftSci at all: the tracked .xcodeproj going
+# stale — the exact bug this repo shipped once (WidgetCatalog.swift referencing two source
+# files XcodeGen had never wired into the build phase, because the tracked project predated
+# them). `xcodegen generate` only needs project.yml and the Sources/ tree structure; it does
+# not resolve any Swift package. A non-empty diff here means someone edited Sources/ or
+# project.yml without regenerating and committing the project file that's supposed to match.
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+
+jobs:
+  project-in-sync:
+    runs-on: macos-15
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Install XcodeGen
+        run: brew install xcodegen
+
+      - name: Regenerate the Xcode project from project.yml
+        run: xcodegen generate
+
+      - name: Fail if the regenerated project differs from what's committed
+        run: |
+          if ! git diff --quiet; then
+            echo "::error::The generated project is out of sync with project.yml/Sources — run 'xcodegen generate' and commit the result."
+            git diff --stat
+            exit 1
+          fi
